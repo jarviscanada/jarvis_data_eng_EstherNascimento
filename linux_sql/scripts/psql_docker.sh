@@ -6,7 +6,7 @@ db_username=$2
 db_password=$3
 
 # Start docker if it is not running
-# We added "> /dev/null" to silence the output so it doesn't pause your script
+
 sudo systemctl status docker > /dev/null || sudo systemctl start docker
 
 # Check container status (exists or not)
@@ -17,13 +17,12 @@ container_status=$?
 case $cmd in 
   create)
   
-    # 1. Check if the container is already created
+    
     if [ $container_status -eq 0 ]; then
       echo "Error: Container 'jrvs-psql' already exists."
       exit 1	
     fi
 
-    # 2. Check if username or password is not given
     if [ -z "$db_username" ] || [ -z "$db_password" ]; then
       echo "Error: Create requires username and password."
       echo "Usage: ./scripts/psql_docker.sh create [db_username] [db_password]"
