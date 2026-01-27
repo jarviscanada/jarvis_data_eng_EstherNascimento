@@ -1,86 +1,106 @@
+
 # Linux Cluster Monitoring Agent
 
 ## Introduction
-
 This project is a Linux Cluster Monitoring tool designed to collect hardware specifications and real-time resource usage from multiple servers. I built this tool to practice and demonstrate skills in **Linux**, **Bash Scripting**, **Docker**, and **PostgreSQL**.
 
 The goal of this project was to create an agent that can run on any Linux server, collect hardware information (like CPU and RAM) and usage data, and save everything in a centralized database.
 
-## Quick Start
 
+**Technologies Used:**
+* **Platform:** Linux (CentOS/Rocky)
+* **Database:** PostgreSQL
+* **Containerization:** Docker
+* **Scripting:** Bash
+* **Version Control:** Git
+
+## Quick Start
 If you want to try  this project yourself, here are the steps to get it up and running:
 
-### 1. Start the Database
+1.  **Start the PostgreSQL Container**
+    ```bash
+    # Create and start the container
+    ./scripts/psql_docker.sh create db_password
+    ```
 
-Use the provided script to create a PostgreSQL container using Docker.bash
-./scripts/psql_docker.sh create db_password
+2.  **Initialize the Database**
+    ```bash
+    # Run the DDL script to create tables
+    psql -h localhost -U postgres -d host_agent -f sql/ddl.sql
+    ```
 
-### 2. Set up the Tables
+3.  **Register the Host**
+    Run this once to store hardware specifications.
+    ```bash
+    # Args: host, port, db_name, user, password
+    ./scripts/host_info.sh localhost 5432 host_agent postgres db_password
+    ```
 
-This command runs the SQL file to create the host_info and host_usage tables.bash
-psql -h localhost -U postgres -d host_agent -f sql/ddl.sql
+4.  **Collect Usage Data**
+    Run this manually to test, or see the next step for automation.
+    ```bash
+    ./scripts/host_usage.sh localhost 5432 host_agent postgres db_password
+    ```
 
-### 3. Register a Host
-
-This script runs once to save the hardware specifications for your computer (static data) to the database.
-
-Bash
-
-./scripts/host_info.sh localhost 5432 host_agent postgres db_password
-
-### 4. Collect Usage Data
-
-This script checks the current memory and CPU usage. You can run it manually to test it:
-
-Bash
-
-./scripts/host_usage.sh localhost 5432 host_agent postgres db_password
-
-### 5. Automate with Crontab
-
-To make it run every minute automatically, add this line to your crontab (crontab -e):
-
-Bash
-
-* * * * * bash /path/to/host_usage.sh localhost 5432 host_agent postgres db_password > /tmp/host_usage.log 2>&1
+5.  **Configure Crontab (Automation)**
+    Edit your crontab (`crontab -e`) to run the usage script every minute:
+    ```bash
+    * * * * * bash /full/path/to/linux_sql/scripts/host_usage.sh localhost 5432 host_agent postgres db_password > /tmp/host_usage.log 2>&1
+    ```
 
 ## Implementation
 
-## Architecture
+### Architecture
+The project architecture consists of a centralized PostgreSQL database that collects data from multiple Linux servers (nodes). Each node runs a local Bash agent that pushes data to the database.
 
-host_info: :
-| Column | Description |
-| :--- | :--- |
-| id | Unique ID for the server |
-| hostname | The name of the machine |
-| cpu_number | Number of cores |
-| cpu_architecture | e.g., x86_64 |
-| cpu_model | e.g., Intel Xeon |
-| cpu_mhz | Speed of the CPU |
-| l2_cache | Cache size |
-| total_mem | Total RAM |
-| timestamp | When it was registered |
+![Architecture Diagram](./assets/architecture.png)
 
-host_usage: 
+### Scripts
+* **`psql_docker.sh`**: A utility script to manage the PostgreSQL Docker container. It supports `start`, `stop`, and `create` commands to ensure the database environment is reproducible.
+* **`host_info.sh`**: Runs once during installation. It captures static hardware specifications (CPU architecture, model, core count, memory) and inserts them into the `host_info` table.
+* **`host_usage.sh`**: Runs repeatedly (scheduled via Crontab). It captures dynamic resource usage (free memory, CPU idle time, disk I/O) and inserts them into the `host_usage` table.
+* **`crontab`**:  Ensuring the database is constantly updated with fresh data.
+* **`ddl.sql`**: Defines the database schema.
 
-| Column | Data Type | Description |
-| :--- | :--- | :--- |
-| id | SERIAL PRIMARY KEY | Unique ID for the server |
-| hostname | VARCHAR(255) | Name of the machine |
-| cpu_number | INT | Number of CPU cores |
-| total_mem | INT | Total RAM in MB |
+### Database Modeling
+I decided to split the data into two tables to avoid repeating information and ensure data integrity.
 
-## Testing
+**`host_info`**
+| Column | Type | Description |
+| --- | --- | --- |
+| `id` | SERIAL | Primary Key, Auto-incremented ID |
+| `hostname` | VARCHAR | Unique name of the server |
+| `cpu_number` | INT | Number of CPU cores |
+| `cpu_architecture` | VARCHAR | Architecture type (e.g., x86_64) |
+| `cpu_model` | VARCHAR | Name/Model of the CPU |
+| `cpu_mhz` | FLOAT | Clock speed of the CPU |
+| `l2_cache` | INT | Size of L2 cache in KB |
+| `total_mem` | INT | Total RAM in KB |
+| `timestamp` | TIMESTAMP | Time of registration |
 
-Bash Testing: Verified that lscpu and vmstat were being parsed correctly.
+**`host_usage`**
+| Column | Type | Description |
+| --- | --- | --- |
+| `timestamp` | TIMESTAMP | Time of data collection |
+| `host_id` | INT | Foreign Key referencing `host_info(id)` |
+| `memory_free` | INT | Available RAM in MB |
+| `cpu_idle` | INT | Percentage of time CPU is idle |
+| `cpu_kernel` | INT | Percentage of time CPU is running kernel code |
+| `disk_io` | INT | Number of disk I/O operations |
+| `disk_available` | INT | Available disk space in MB |
 
-Database Check: Confirmed data was saved using SELECT * FROM host_usage.
+## Test
+Testing was conducted manually in a Linux environment.
+1.  **Script Validation:** Verified that `host_info.sh` and `host_usage.sh` correctly parsed `lscpu` and `vmstat` outputs.
+2.  **Database Integration:** Executed scripts and queried the PostgreSQL database (`SELECT * FROM host_usage`) to confirm data persistence.
 
-## Automation
 
-Verified crontab was adding a new row every 60 seconds.
+## Deployment
+The application is deployed using **Docker** for the database and **Crontab** for the monitoring agents.
+* **Database:** Deployed as a Docker container to ensure isolation and ease of setup.
+* **Source Code:** Managed via GitHub.
+* **Agents:** Deployed directly on the host OS as executable Bash scripts scheduled by the native Linux cron daemon.
 
-## Future Improvements
+## Improvements
 
-Handle Hardware Updates: Update logic to handle changes in existing hostnames.
-
+1.  **Visualization:** Build a simple web dashboard or connect Grafana to the PostgreSQL database to visualize the usage trends over time.
