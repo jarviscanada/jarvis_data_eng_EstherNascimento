@@ -51,14 +51,14 @@ If you want to try  this project yourself, here are the steps to get it up and r
 ## Implementation
 
 ### Architecture
-The project architecture consists of a centralized PostgreSQL database that collects data from multiple Linux servers (nodes). Each node runs a local Bash agent that pushes data to the database.
+The project architecture consists of a centralized PostgreSQL database that collects data from multiple Linux servers. Each server runs a local Bash agent that insert data to the database.
 
 ![Architecture Diagram](./assets/architecture.png)
 
 ### Scripts
-* **`psql_docker.sh`**: A utility script to manage the PostgreSQL Docker container. It supports `start`, `stop`, and `create` commands to ensure the database environment is reproducible.
-* **`host_info.sh`**: Runs once during installation. It captures static hardware specifications (CPU architecture, model, core count, memory) and inserts them into the `host_info` table.
-* **`host_usage.sh`**: Runs repeatedly (scheduled via Crontab). It captures dynamic resource usage (free memory, CPU idle time, disk I/O) and inserts them into the `host_usage` table.
+* **`psql_docker.sh`**: A utility script to manage the PostgreSQL Docker container. It supports `start`, `stop`, and `create` commands to ensure the database environment is correct.
+* **`host_info.sh`**: Runs once during installation. It gets static hardware specifications and inserts them into the `host_info` table.
+* **`host_usage.sh`**: Runs again and again. It gets the dynamic resource (free memory, CPU idle time, disk I/O) and inserts them into the `host_usage` table.
 * **`crontab`**:  Ensuring the database is constantly updated with fresh data.
 * **`ddl.sql`**: Defines the database schema.
 
@@ -91,15 +91,15 @@ I decided to split the data into two tables to avoid repeating information and e
 
 ## Test
 Testing was conducted manually in a Linux environment.
-1.  **Script Validation:** Verified that `host_info.sh` and `host_usage.sh` correctly parsed `lscpu` and `vmstat` outputs.
-2.  **Database Integration:** Executed scripts and queried the PostgreSQL database (`SELECT * FROM host_usage`) to confirm data persistence.
+1.  **Script Validation:** Verified that `host_info.sh` and `host_usage.sh`
+2.  **Database Integration:** Executed scripts and queried the PostgreSQL database (`SELECT * FROM host_usage`) to confirm if data exists.
 
 
 ## Deployment
 The application is deployed using **Docker** for the database and **Crontab** for the monitoring agents.
-* **Database:** Deployed as a Docker container to ensure isolation and ease of setup.
+* **Database:** Deployed as a Docker container.
 * **Source Code:** Managed via GitHub.
-* **Agents:** Deployed directly on the host OS as executable Bash scripts scheduled by the native Linux cron daemon.
+* **Agents:** Deployed directly on the host OS with a  Bash scripts.
 
 ## Improvements
 
