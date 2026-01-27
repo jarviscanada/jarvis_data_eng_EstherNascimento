@@ -48,12 +48,27 @@ Bash
 
 ## Architecture
 
-Database Modeling
-I decided to split the data into two tables to avoid repeating information and ensure data integrity. This way its easier to see and to understand.
+host_info: :
+| Column | Description |
+| :--- | :--- |
+| id | Unique ID for the server |
+| hostname | The name of the machine |
+| cpu_number | Number of cores |
+| cpu_architecture | e.g., x86_64 |
+| cpu_model | e.g., Intel Xeon |
+| cpu_mhz | Speed of the CPU |
+| l2_cache | Cache size |
+| total_mem | Total RAM |
+| timestamp | When it was registered |
 
-host_info: Stores static data like CPU model and total RAM. | Column | Description | | --- | --- | | id | Unique ID for the server | | hostname | The name of the machine | | cpu_number | Number of cores | | total_mem | Total RAM |
+host_usage: 
 
-host_usage: Stores dynamic data collected every minute. | Column | Description | | --- | --- | | timestamp | When the data was collected | | host_id | Links back to the host_info table | | memory_free | Free RAM in MB | | cpu_idle | % of CPU doing nothing |
+| Column | Data Type | Description |
+| :--- | :--- | :--- |
+| id | SERIAL PRIMARY KEY | Unique ID for the server |
+| hostname | VARCHAR(255) | Name of the machine |
+| cpu_number | INT | Number of CPU cores |
+| total_mem | INT | Total RAM in MB |
 
 ## Testing
 
