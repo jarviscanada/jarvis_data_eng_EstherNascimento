@@ -1,8 +1,9 @@
 # Introduction
+This project involves setting up a PostgreSQL database using Docker, modeling data based on a country club schema, and performing various SQL queries to practice DDL, DML, and advanced data retrieval.
 
-# SQL Queries
+# Table Setup (DDL)
+The following SQL statements were used to create the schema and tables based on the provided data model.
 
-###### Table Setup (DDL)
 ```sql
 CREATE SCHEMA cd;
 
@@ -39,12 +40,3 @@ CREATE TABLE cd.bookings (
     CONSTRAINT fk_bookings_facid FOREIGN KEY (facid) REFERENCES cd.facilities(facid),
     CONSTRAINT fk_bookings_memid FOREIGN KEY (memid) REFERENCES cd.members(memid)
 );
-
-###### Question 1: Show all members 
-
-
-
-###### Question 2: Lorem ipsum...
-
-
-
