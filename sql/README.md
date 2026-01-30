@@ -40,3 +40,276 @@ CREATE TABLE cd.bookings (
     CONSTRAINT fk_bookings_facid FOREIGN KEY (facid) REFERENCES cd.facilities(facid),
     CONSTRAINT fk_bookings_memid FOREIGN KEY (memid) REFERENCES cd.members(memid)
 );
+
+
+```
+
+# Queries 
+
+## Modifying Data
+
+-- 1. Add a new facility (Spa)
+```
+INSERT INTO cd.facilities (facid, name, membercost, guestcost, initialoutlay, monthlymaintenance)
+VALUES (9, 'Spa', 20, 30, 100000, 800);
+```
+-- 2. Add a new Spa with auto-generated facid
+```
+INSERT INTO cd.facilities (facid, name, membercost, guestcost, initialoutlay, monthlymaintenance)
+SELECT (SELECT MAX(facid) FROM cd.facilities) + 1, 'Spa', 20, 30, 100000, 800;
+```
+-- 3. Fix the mistake for the second tennis court
+```
+UPDATE cd.facilities
+SET initialoutlay = 10000
+WHERE name = 'Tennis Court 2';
+```
+
+-- 4. Change the price of the second tennis court
+``` 
+UPDATE cd.facilities
+SET membercost = (
+        SELECT membercost * 1.1 
+        FROM cd.facilities 
+        WHERE name = 'Tennis Court 1'
+    ),
+    guestcost = (
+        SELECT guestcost * 1.1 
+        FROM cd.facilities 
+        WHERE name = 'Tennis Court 1'
+    )
+WHERE name = 'Tennis Court 2';
+```
+
+-- 5. Delete all bookings from the bookings table
+```
+DELETE FROM cd.bookings;
+```
+
+-- 6. Remove member 37  if they have no bookings
+```
+DELETE FROM cd.members
+WHERE memid = 37
+  AND memid NOT IN (SELECT memid FROM cd.bookings);
+```
+
+## Basics
+
+-- 7. Facilities with member fee less than 1/50
+```
+SELECT facid, name, membercost, monthlymaintenance
+FROM cd.facilities
+WHERE membercost > 0
+  AND membercost < (monthlymaintenance / 50.0);
+```
+
+-- 8. List all facilities with the word 'Tennis'
+```
+SELECT *
+FROM cd.facilities
+WHERE name LIKE '%Tennis%';
+```
+
+-- 9. List details of facilities with ID 1 and 5
+```
+SELECT *
+FROM cd.facilities
+WHERE facid IN (1, 5);
+```
+
+-- 10. List members who joined after the start of September 2012
+```
+SELECT memid, surname, firstname, joindate
+FROM cd.members
+WHERE joindate >= '2012-09-01'
+ORDER BY joindate;
+```
+
+-- 11. Produce a combined list of all surnames and facility names 
+```
+SELECT surname FROM cd.members
+UNION
+SELECT name FROM cd.facilities;
+```
+
+## Joins
+
+-- 12. List start times for member David Farrell
+```
+SELECT bks.starttime
+FROM cd.bookings bks
+JOIN cd.members mems
+  ON bks.memid = mems.memid
+WHERE mems.firstname = 'David'
+  AND mems.surname = 'Farrell'
+ORDER BY bks.starttime;
+```
+
+-- 13. Find booking start times for tennis courts on a specific date
+```
+SELECT bks.starttime, facs.name
+FROM cd.bookings bks
+JOIN cd.facilities facs
+  ON bks.facid = facs.facid
+WHERE facs.name LIKE 'Tennis Court%'
+  AND bks.starttime >= '2012-09-21'
+  AND bks.starttime < '2012-09-22'
+ORDER BY bks.starttime;
+```
+
+-- 14. Output all members including their recommender 
+```
+SELECT
+    mems.firstname AS memfname,
+    mems.surname   AS memsname,
+    recs.firstname AS recfname,
+    recs.surname   AS recsname
+FROM cd.members mems
+LEFT JOIN cd.members recs
+  ON recs.memid = mems.recommendedby
+ORDER BY mems.surname, mems.firstname;
+```
+
+
+-- 15. Identify members who have recommended at least one other person
+```
+SELECT DISTINCT recs.firstname, recs.surname AS fullname
+FROM cd.members mems
+JOIN cd.members recs
+  ON recs.memid = mems.recommendedby
+ORDER BY recs.surname, recs.firstname;
+```
+
+-- 16. List recommenders without using a JOIN 
+```
+SELECT DISTINCT
+    mems.firstname || ' ' || mems.surname AS member,
+    (
+        SELECT recs.firstname || ' ' || recs.surname
+        FROM cd.members recs
+        WHERE recs.memid = mems.recommendedby
+    ) AS recommender
+FROM cd.members mems
+ORDER BY member;
+```
+
+## Agregation
+
+-- 17. Compute the count of recommendations per member
+```
+SELECT recommendedby, COUNT(*)
+FROM cd.members
+WHERE recommendedby IS NOT NULL
+GROUP BY recommendedby
+ORDER BY recommendedby;
+```
+
+-- 18. Calculate total slot usage per facility
+```
+SELECT facid, SUM(slots) AS total_slots
+FROM cd.bookings
+GROUP BY facid
+ORDER BY facid;
+```
+
+-- 19. Calculate total slots per facility for Sept 2012
+```
+SELECT facid, SUM(slots) AS total_slots
+FROM cd.bookings
+WHERE starttime >= '2012-09-01'
+  AND starttime < '2012-10-01'
+GROUP BY facid
+ORDER BY total_slots;
+```
+
+-- 20. Calculate total slots per facility per month for 2012
+```
+SELECT
+    facid,
+    EXTRACT(MONTH FROM starttime) AS month,
+    SUM(slots) AS total_slots
+FROM cd.bookings
+WHERE EXTRACT(YEAR FROM starttime) = 2012
+GROUP BY facid, month
+ORDER BY facid, month;
+```
+
+-- 21. Count of unique members who booked at least once
+```
+SELECT COUNT(DISTINCT memid)
+FROM cd.bookings;
+```
+-- 22. First booking date for each member after Sept 1st, 2012
+```
+SELECT
+    mems.surname,
+    mems.firstname,
+    mems.memid,
+    MIN(bks.starttime) AS starttime
+FROM cd.members mems
+JOIN cd.bookings bks
+  ON mems.memid = bks.memid
+WHERE bks.starttime >= '2012-09-01'
+GROUP BY mems.surname, mems.firstname, mems.memid
+ORDER BY mems.memid;
+```
+
+-- 23. Total members count shown on each row (Window function)
+```
+SELECT
+    COUNT(*) OVER() AS total_members,
+    firstname,
+    surname
+FROM cd.members
+ORDER BY joindate;
+```
+
+-- 24. Sequential row number based on join date
+```
+SELECT
+    ROW_NUMBER() OVER (ORDER BY joindate) AS row_num,
+    firstname,
+    surname
+FROM cd.members
+ORDER BY joindate;
+```
+
+-- 25. Facility with highest total slots booked (Rank)
+```
+SELECT facid, total
+FROM (
+    SELECT
+        facid,
+        SUM(slots) AS total,
+        RANK() OVER (ORDER BY SUM(slots) DESC) AS rank
+    FROM cd.bookings
+    GROUP BY facid
+) AS ranked_facs
+WHERE rank = 1;
+```
+
+## String operations
+
+-- 26. Concatenate surname and firstname
+```
+SELECT surname || ', ' || firstname AS formatted_name
+FROM cd.members;
+```
+
+```
+-- 27. Telephone numbers containing parentheses (Regex)
+SELECT memid, telephone
+FROM cd.members
+WHERE telephone ~ '[()]'
+ORDER BY memid;
+```
+
+-- 28. Distribution of members by first letter of surname
+```
+SELECT
+    LEFT(surname, 1) AS letter,
+    COUNT(*) AS count
+FROM cd.members
+GROUP BY letter
+ORDER BY letter;
+```
