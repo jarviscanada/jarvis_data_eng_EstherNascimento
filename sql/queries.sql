@@ -59,7 +59,7 @@ SELECT name FROM cd.facilities;
 -- JOINS
 --------------------------------------------------------------------------------
 
--- 12. Retrieve start times for a specific member (David Farrell)
+-- 12. Retrieve start times for David Farrell
 SELECT bks.starttime
 FROM cd.bookings bks
 JOIN cd.members mems ON bks.memid = mems.memid
@@ -74,7 +74,7 @@ WHERE facs.name LIKE 'Tennis Court%'
   AND bks.starttime >= '2012-09-21' AND bks.starttime < '2012-09-22'
 ORDER BY bks.starttime;
 
--- 14. Output all members including their recommender (if available)
+-- 14. Output all members including their recommender 
 SELECT mems.firstname AS memfname, mems.surname AS memsname, recs.firstname AS recfname, recs.surname AS recsname
 FROM cd.members mems
 LEFT JOIN cd.members recs ON recs.memid = mems.recommendedby
@@ -86,7 +86,7 @@ FROM cd.members mems
 JOIN cd.members recs ON recs.memid = mems.recommendedby
 ORDER BY recs.surname, recs.firstname;
 
--- 16. List recommenders without using a JOIN (Subquery method)
+-- 16. List recommenders without using a JOIN
 SELECT DISTINCT mems.firstname || ' ' || mems.surname AS member,
     (SELECT recs.firstname || ' ' || recs.surname FROM cd.members recs WHERE recs.memid = mems.recommendedby) AS recommender
 FROM cd.members mems
@@ -134,7 +134,7 @@ WHERE bks.starttime >= '2012-09-01'
 GROUP BY mems.surname, mems.firstname, mems.memid
 ORDER BY mems.memid;
 
--- 23. List members with a count of total members attached to each row (Window function)
+-- 23. List members with a count of total members attached to each row
 SELECT COUNT(*) OVER(), firstname, surname
 FROM cd.members
 ORDER BY joindate;
@@ -144,7 +144,7 @@ SELECT ROW_NUMBER() OVER(ORDER BY joindate), firstname, surname
 FROM cd.members
 ORDER BY joindate;
 
--- 25. Find the facility with the highest total slots booked (Rank function)
+-- 25. Find the facility with the highest total slots booked 
 SELECT facid, total
 FROM (
     SELECT facid, SUM(slots) AS total, RANK() OVER (ORDER BY SUM(slots) DESC) AS rank
@@ -158,10 +158,10 @@ WHERE rank = 1;
 --------------------------------------------------------------------------------
 
 -- 26. Concatenate surname and firstname
-SELECT surname || ', ' || firstname AS formatted_name
+SELECT surname || ', ' || firstname AS fullname
 FROM cd.members;
 
--- 27. Find telephone numbers containing parentheses (Regex match)
+-- 27. Find telephone numbers containing parentheses 
 SELECT memid, telephone
 FROM cd.members
 WHERE telephone ~ '[()]'
