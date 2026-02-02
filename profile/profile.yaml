@@ -13,7 +13,6 @@ skills:
   proficient:
     - SQL (PostgreSQL)
     - Linux/Bash Scripting
-    - Docker
     - Git/GitHub
     - Database Design (DDL/DML)
     - Crontab/Automation
@@ -24,6 +23,7 @@ skills:
     - Google Cloud Platform (GCP)
     - HTML/CSS
   familiar:
+    - Docker
     - MongoDB
     - React
     - Tableau
