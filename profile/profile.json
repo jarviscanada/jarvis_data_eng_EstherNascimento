@@ -1,0 +1,103 @@
+{
+  "education": [
+    {
+      "awards_achievements": [
+        "Relevant Coursework: Object-Oriented Programming (C++, Java), Database Design (SQL).",
+        "Applied SDLC principles to design and deploy scalable applications."
+      ],
+      "degree": "Diploma in Computer Programming",
+      "department": "School of Information Technology",
+      "duration": "2023 - 2025",
+      "school_name": "Seneca College"
+    }
+  ],
+  "github_repo_root_url": "https://github.com/jarviscanada/jarvis_data_eng_EstherLaraNascimento",
+  "highlighted_projects": [
+    {
+      "description": "Designed and deployed a containerized PostgreSQL database for a country club management system using Docker. Architected the database schema (DDL) and managed data ingestion for members, facilities, and bookings. Engineered complex SQL queries using Joins, Aggregations, and Window Functions.",
+      "name": "Jarvis RDBMS (Relational Database)"
+    },
+    {
+      "description": "Provisioned and configured a Google Cloud Platform (GCP) Virtual Machine with Rocky Linux to serve as a dedicated remote development environment. Orchestrated the installation of Docker and VNC servers, and configured firewall rules for secure access.",
+      "name": "Jarvis Remote Desktop (Infrastructure)"
+    }
+  ],
+  "jarvis_projects": [
+    {
+      "description": "Architected and implemented a lightweight server monitoring tool using Linux Bash scripting to track system resource usage (CPU, Memory, Disk) in real-time. Configured automated data collection via Crontab scheduling to generate periodic health reports.\n",
+      "git_url": "https://github.com/jarviscanada/jarvis_data_eng_EstherLaraNascimento/tree/feature/cluster_monitor",
+      "name": "Cluster Monitor"
+    },
+    {
+      "description": "Pending implementation",
+      "git_url": "https://github.com/jarviscanada/jarvis_data_eng_EstherLaraNascimento",
+      "name": "Core Java"
+    },
+    {
+      "description": "Pending implementation",
+      "git_url": "https://github.com/jarviscanada/jarvis_data_eng_EstherLaraNascimento",
+      "name": "Springboot"
+    },
+    {
+      "description": "Pending implementation",
+      "git_url": "https://github.com/jarviscanada/jarvis_data_eng_EstherLaraNascimento",
+      "name": "Hadoop"
+    },
+    {
+      "description": "Pending implementation",
+      "git_url": "https://github.com/jarviscanada/jarvis_data_eng_EstherLaraNascimento",
+      "name": "Spark"
+    },
+    {
+      "description": "Pending implementation",
+      "git_url": "https://github.com/jarviscanada/jarvis_data_eng_EstherLaraNascimento",
+      "name": "Cloud DevOps"
+    }
+  ],
+  "name": "Esther Lara Nascimento",
+  "others": [
+    {
+      "bullets": [
+        "Fluent in Portuguese and English",
+        "Plant Care Enthusiast (Monstera, ZZ Plants)",
+        "Continuous Learner",
+        "Team Player",
+        "Problem Solver"
+      ],
+      "title": "Languages \u0026 Interests"
+    }
+  ],
+  "professional_experience": [
+    {
+      "company": "Construtora Vale do Ouro",
+      "description": "Managed and analyzed complex financial records to ensure accuracy and compliance with regulatory standards. Collaborated with cross-functional teams to streamline financial reporting processes and improve data integrity.",
+      "duration": "2017 - 2019",
+      "title": "Accountant"
+    }
+  ],
+  "skills": {
+    "competent": [
+      "Python",
+      "C++",
+      "JavaScript",
+      "Google Cloud Platform (GCP)",
+      "HTML/CSS"
+    ],
+    "familiar": [
+      "Java",
+      "JSON/YAML",
+      "React",
+      "Kubernetes",
+      "Redis"
+    ],
+    "proficient": [
+      "SQL (PostgreSQL)",
+      "Linux/Bash Scripting",
+      "Docker",
+      "Git/GitHub",
+      "Database Design (DDL/DML)",
+      "Crontab/Automation"
+    ]
+  },
+  "summary": "Aspiring Data Engineer with a strong foundation in database management, cloud infrastructure, and software development. Experienced in provisioning cloud environments on GCP, designing relational database schemas using PostgreSQL, and automating system monitoring with Bash. Proficient in writing complex SQL queries for data analysis and managing version control with Git. Passionate about building scalable data solutions and automating development workflows.\n"
+}
