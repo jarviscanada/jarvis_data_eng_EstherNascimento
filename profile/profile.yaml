@@ -24,11 +24,11 @@ skills:
     - Google Cloud Platform (GCP)
     - HTML/CSS
   familiar:
-    - Java
-    - JSON/YAML
+    - MongoDB
     - React
-    - Kubernetes
-    - Redis
+    - Tableau
+    - JSON/YAML
+    - Jira
 
 # ---------------------------------------------------------
 # JARVIS PROJECTS
@@ -76,7 +76,7 @@ professional_experience:
   - title: "Accountant"
     company: "Construtora Vale do Ouro"
     duration: "2017 - 2019"
-    description: "Managed and analyzed complex financial records to ensure accuracy and compliance with regulatory standards. Collaborated with cross-functional teams to streamline financial reporting processes and improve data integrity."
+    description: "Ensured high-accuracy data entry and prepared detailed financial reports for senior management and directors. Managed tax filings and operational compliance requirements while collaborating within a team environment to optimize financial workflows."
 
 # ---------------------------------------------------------
 # EDUCATION
@@ -84,8 +84,8 @@ professional_experience:
 education:
   - school_name: "Seneca College"
     duration: "2023 - 2025"
-    degree: "Diploma in Computer Programming"
     department: "School of Information Technology"
+    degree: "Diploma in Computer Programming"
     awards_achievements:
       - "Relevant Coursework: Object-Oriented Programming (C++, Java), Database Design (SQL)."
       - "Applied SDLC principles to design and deploy scalable applications."

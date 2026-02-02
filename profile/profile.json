@@ -70,7 +70,7 @@
   "professional_experience": [
     {
       "company": "Construtora Vale do Ouro",
-      "description": "Managed and analyzed complex financial records to ensure accuracy and compliance with regulatory standards. Collaborated with cross-functional teams to streamline financial reporting processes and improve data integrity.",
+      "description": "Ensured high-accuracy data entry and prepared detailed financial reports for senior management and directors. Managed tax filings and operational compliance requirements while collaborating within a team environment to optimize financial workflows.",
       "duration": "2017 - 2019",
       "title": "Accountant"
     }
@@ -84,11 +84,11 @@
       "HTML/CSS"
     ],
     "familiar": [
-      "Java",
-      "JSON/YAML",
+      "MongoDB",
       "React",
-      "Kubernetes",
-      "Redis"
+      "Tableau",
+      "JSON/YAML",
+      "Jira"
     ],
     "proficient": [
       "SQL (PostgreSQL)",
