@@ -13,6 +13,7 @@ skills:
   proficient:
     - SQL (PostgreSQL)
     - Linux/Bash Scripting
+    - Docker
     - Git/GitHub
     - Database Design (DDL/DML)
     - Crontab/Automation
@@ -23,7 +24,6 @@ skills:
     - Google Cloud Platform (GCP)
     - HTML/CSS
   familiar:
-    - Docker
     - MongoDB
     - React
     - Tableau
@@ -33,35 +33,17 @@ skills:
 # ---------------------------------------------------------
 # JARVIS PROJECTS
 # ---------------------------------------------------------
+# Updated: Only Cluster Monitor is listed here.
 jarvis_projects:
   - name: Cluster Monitor
     git_url: https://github.com/jarviscanada/jarvis_data_eng_EstherLaraNascimento/tree/feature/cluster_monitor
     description: |
       Architected and implemented a lightweight server monitoring tool using Linux Bash scripting to track system resource usage (CPU, Memory, Disk) in real-time. Configured automated data collection via Crontab scheduling to generate periodic health reports.
 
-  - name: Core Java
-    git_url: https://github.com/jarviscanada/jarvis_data_eng_EstherLaraNascimento
-    description: "Pending implementation"
-
-  - name: Springboot
-    git_url: https://github.com/jarviscanada/jarvis_data_eng_EstherLaraNascimento
-    description: "Pending implementation"
-
-  - name: Hadoop
-    git_url: https://github.com/jarviscanada/jarvis_data_eng_EstherLaraNascimento
-    description: "Pending implementation"
-
-  - name: Spark
-    git_url: https://github.com/jarviscanada/jarvis_data_eng_EstherLaraNascimento
-    description: "Pending implementation"
-
-  - name: Cloud DevOps
-    git_url: https://github.com/jarviscanada/jarvis_data_eng_EstherLaraNascimento
-    description: "Pending implementation"
-
 # ---------------------------------------------------------
 # HIGHLIGHTED PROJECTS
 # ---------------------------------------------------------
+# Updated: Includes your RDBMS (SQL) and Remote Desktop work.
 highlighted_projects:
   - name: Jarvis RDBMS (Relational Database)
     description: Designed and deployed a containerized PostgreSQL database for a country club management system using Docker. Architected the database schema (DDL) and managed data ingestion for members, facilities, and bookings. Engineered complex SQL queries using Joins, Aggregations, and Window Functions.
