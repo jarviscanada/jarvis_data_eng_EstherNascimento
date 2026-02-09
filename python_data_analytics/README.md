@@ -17,7 +17,7 @@ This project solves that problem by building a Data Analytics solution. We take 
 
 ## Project Architecture
 The project follows a standard Data Analytics architecture.
-1.  **LGS Web App:** The source of the raw transactional data (CSV files).
+1.  **LGS Web App:** The source of the raw transactional data (provided as a SQL dump file).
 2.  **PostgreSQL (Data Warehouse):** A robust database hosted in a Docker container to store cleaned data.
 3.  **Jupyter Notebook:** Connected to the Data Warehouse to extract data, perform analysis, and generate visualizations.
 4.  **End User:** The marketing team consumes the charts and segmentation reports.
