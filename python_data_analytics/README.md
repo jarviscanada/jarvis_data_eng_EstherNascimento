@@ -22,7 +22,7 @@ The project follows a standard Data Analytics architecture.
 3.  **Jupyter Notebook:** Connected to the Data Warehouse to extract data, perform analysis, and generate visualizations.
 4.  **End User:** The marketing team consumes the charts and segmentation reports.
 
-*(Note: You can draw a simple diagram in draw.io showing: [LGS Data (CSV)] -> [PostgreSQL Container] <-> [Jupyter Notebook Container] -> [Marketing Insights])*
+*(![Project Architecture](./assets/architecture.png))*
 
 ## Data Analytics and Wrangling
 You can find the detailed analysis and code in the following notebook:
