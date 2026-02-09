@@ -1,9 +1,9 @@
 # Retail Data Analytics Project
 
 # Introduction
-The London Gift Shop (LGS) is a UK-based online retailer that specializes in all-occasion gifts. For years, the company has relied on transactional data to sell products but has lacked the ability to leverage this data for strategic decision-making.
+The London Gift Shop (LGS) is a UK-based online store that sells gifts for all occasions. While they have years of sales data, they haven't been able to use it to understand their customers better.
 
-This project focuses on bridging that gap by building a Data Analytics solution. By migrating their transactional data into a Data Warehouse and performing advanced analytics (such as RFM Segmentation), we aim to provide the marketing team with actionable insights. These insights allow LGS to move from "gut-feeling" marketing to data-driven customer targeting, ultimately helping to increase revenue and customer retention.
+This project solves that problem by building a Data Analytics solution. We take their raw sales records and move them into a specialized database (a Data Warehouse) to analyze shopping patterns. By grouping customers based on their buying habits—a technique called RFM Segmentation—we help the marketing team make smarter decisions. This moves LGS away from guessing what customers want and towards data-driven strategies that boost sales and loyalty.
 
 **Technologies Used:**
 * **Docker:** To containerize the database and analytics environment.
@@ -11,7 +11,7 @@ This project focuses on bridging that gap by building a Data Analytics solution.
 * **Jupyter Notebook:** The interactive environment for writing code and visualizing data.
 * **Python:** The primary programming language.
 * **Pandas & NumPy:** For data wrangling, cleaning, and analysis.
-* **Matplotlib & Seaborn:** For creating data visualizations and plotting customer segments.
+
 
 # Implementation
 
@@ -22,7 +22,7 @@ The project follows a standard Data Analytics architecture.
 3.  **Jupyter Notebook:** Connected to the Data Warehouse to extract data, perform analysis, and generate visualizations.
 4.  **End User:** The marketing team consumes the charts and segmentation reports.
 
-*(![Project Architecture](./assets/architecture.png))*
+*![Project Architecture](./assets/architecture.png)*
 
 ## Data Analytics and Wrangling
 You can find the detailed analysis and code in the following notebook:
@@ -36,5 +36,4 @@ By analyzing the data, specifically using **RFM (Recency, Frequency, Monetary) A
 # Improvements
 If more time were available, the following improvements could be made:
 1.  **Automate the ETL Pipeline:** Currently, the data loading is manual. I would write a Python script to automatically fetch new CSVs from the web app and load them into the database daily.
-2.  **Interactive Dashboard:** Migrate the static charts from Jupyter to an interactive tool like Tableau or PowerBI so non-technical stakeholders can filter data themselves.
-3.  **Cloud Deployment:** Move the Docker containers from a local machine to a cloud provider (like AWS EC2) so the database and notebook are accessible to the entire team 24/7.
+2.  **Cloud Deployment:** Move the Docker containers from a local machine to a cloud provider (like AWS EC2) so the database and notebook are accessible to the entire team 24/7.
