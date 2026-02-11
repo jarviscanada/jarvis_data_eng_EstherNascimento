@@ -1,0 +1,39 @@
+# Retail Data Analytics Project
+
+# Introduction
+The London Gift Shop (LGS) is a UK-based online store that sells gifts for all occasions. While they have years of sales data, they haven't been able to use it to understand their customers better.
+
+This project solves that problem by building a Data Analytics solution. We take their raw sales records and move them into a specialized database (a Data Warehouse) to analyze shopping patterns. By grouping customers based on their buying habits—a technique called RFM Segmentation—we help the marketing team make smarter decisions. This moves LGS away from guessing what customers want and towards data-driven strategies that boost sales and loyalty.
+
+**Technologies Used:**
+* **Docker:** To containerize the database and analytics environment.
+* **PostgreSQL:** Used as the Data Warehouse to store retail transaction data.
+* **Jupyter Notebook:** The interactive environment for writing code and visualizing data.
+* **Python:** The primary programming language.
+* **Pandas & NumPy:** For data wrangling, cleaning, and analysis.
+
+
+# Implementation
+
+## Project Architecture
+The project follows a standard Data Analytics architecture.
+1.  **LGS Web App:** The source of the raw transactional data (provided as a SQL dump file).
+2.  **PostgreSQL (Data Warehouse):** A robust database hosted in a Docker container to store cleaned data.
+3.  **Jupyter Notebook:** Connected to the Data Warehouse to extract data, perform analysis, and generate visualizations.
+4.  **End User:** The marketing team consumes the charts and segmentation reports.
+
+*![Project Architecture](./assets/architecture.png)*
+
+## Data Analytics and Wrangling
+You can find the detailed analysis and code in the following notebook:
+* [Retail Data Analytics Notebook](./retail_data_analytics_wrangling.ipynb)
+
+**Business Impact & Strategy:**
+By analyzing the data, specifically using **RFM (Recency, Frequency, Monetary) Analysis**, we categorized customers into segments like "Champions," "Potential Loyalists," and "Hibernating."
+* **Marketing Strategy:** We can increase revenue by targeting the "Hibernating" segment (customers who bought before but haven't recently) with re-engagement campaigns (e.g., "We miss you" coupons).
+* **Retention:** "Champions" can be rewarded with early access to new products to maintain their high lifetime value.
+
+# Improvements
+If more time were available, the following improvements could be made:
+1.  **Automate the ETL Pipeline:** Currently, the data loading is manual. I would write a Python script to automatically fetch new CSVs from the web app and load them into the database daily.
+2.  **Cloud Deployment:** Move the Docker containers from a local machine to a cloud provider (like AWS EC2) so the database and notebook are accessible to the entire team 24/7.
