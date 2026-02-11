@@ -1,0 +1,85 @@
+# ---------------------------------------------------------
+# BASICS
+# ---------------------------------------------------------
+name: Esther Lara Nascimento
+github_repo_root_url: https://github.com/jarviscanada/jarvis_data_eng_EstherLaraNascimento
+summary: |
+  Aspiring Data Engineer with a strong foundation in database management, cloud infrastructure, and software development. Experienced in provisioning cloud environments on GCP, designing relational database schemas using PostgreSQL, and automating system monitoring with Bash. Proficient in writing complex SQL queries for data analysis and managing version control with Git. Passionate about building scalable data solutions and automating development workflows.
+
+# ---------------------------------------------------------
+# SKILLS
+# ---------------------------------------------------------
+skills:
+  proficient:
+    - SQL (PostgreSQL)
+    - Linux/Bash Scripting
+    - Docker
+    - Git/GitHub
+    - Database Design (DDL/DML)
+    - Crontab/Automation
+  competent:
+    - Python
+    - C++
+    - JavaScript
+    - Google Cloud Platform (GCP)
+    - HTML/CSS
+  familiar:
+    - MongoDB
+    - React
+    - Tableau
+    - JSON/YAML
+    - Jira
+
+# ---------------------------------------------------------
+# JARVIS PROJECTS
+# ---------------------------------------------------------
+# Updated: Only Cluster Monitor is listed here.
+jarvis_projects:
+  - name: Cluster Monitor
+    git_url: https://github.com/jarviscanada/jarvis_data_eng_EstherLaraNascimento/tree/feature/cluster_monitor
+    description: |
+      Architected and implemented a lightweight server monitoring tool using Linux Bash scripting to track system resource usage (CPU, Memory, Disk) in real-time. Configured automated data collection via Crontab scheduling to generate periodic health reports.
+
+# ---------------------------------------------------------
+# HIGHLIGHTED PROJECTS
+# ---------------------------------------------------------
+# Updated: Includes your RDBMS (SQL) and Remote Desktop work.
+highlighted_projects:
+  - name: Jarvis RDBMS (Relational Database)
+    description: Designed and deployed a containerized PostgreSQL database for a country club management system using Docker. Architected the database schema (DDL) and managed data ingestion for members, facilities, and bookings. Engineered complex SQL queries using Joins, Aggregations, and Window Functions.
+
+  - name: Jarvis Remote Desktop (Infrastructure)
+    description: Provisioned and configured a Google Cloud Platform (GCP) Virtual Machine with Rocky Linux to serve as a dedicated remote development environment. Orchestrated the installation of Docker and VNC servers, and configured firewall rules for secure access.
+
+# ---------------------------------------------------------
+# PROFESSIONAL EXPERIENCE
+# ---------------------------------------------------------
+professional_experience:
+  - title: "Accountant"
+    company: "Construtora Vale do Ouro"
+    duration: "2017 - 2019"
+    description: "Ensured high-accuracy data entry and prepared detailed financial reports for senior management and directors. Managed tax filings and operational compliance requirements while collaborating within a team environment to optimize financial workflows."
+
+# ---------------------------------------------------------
+# EDUCATION
+# ---------------------------------------------------------
+education:
+  - school_name: "Seneca College"
+    duration: "2023 - 2025"
+    department: "School of Information Technology"
+    degree: "Diploma in Computer Programming"
+    awards_achievements:
+      - "Relevant Coursework: Object-Oriented Programming (C++, Java), Database Design (SQL)."
+      - "Applied SDLC principles to design and deploy scalable applications."
+
+# ---------------------------------------------------------
+# OTHERS
+# ---------------------------------------------------------
+others:
+  - title: "Languages & Interests"
+    bullets:
+      - "Fluent in Portuguese and English"
+      - "Plant Care Enthusiast (Monstera, ZZ Plants)"
+      - "Continuous Learner"
+      - "Team Player"
+      - "Problem Solver"
