@@ -1,0 +1,6 @@
+*.class
+target/
+.idea/
+*.iml
+core_java/grep/data/txt/shakespeare.txt
+core_java/grep/out/
