@@ -1,8 +1,9 @@
-package ca.jrvs.apps.practice;
+package ca.jrvs.apps.practice.practice;
 
-class HelloWorld {
+public class HelloWorld {
+    public static void main(String[] args) {
 
-  public static void main(String[] args) {
-    System.out.println("Hello, World");
-  }
+        System.out.print("Hello World");
+    }
+
 }
