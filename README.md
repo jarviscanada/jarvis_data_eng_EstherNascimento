@@ -23,8 +23,6 @@ Project source code: [https://github.com/jarviscanada/jarvis_data_eng_EstherLara
 ## Highlighted Projects
 **Jarvis RDBMS (Relational Database)**: Designed and deployed a containerized PostgreSQL database for a country club management system using Docker. Architected the database schema (DDL) and managed data ingestion for members, facilities, and bookings. Engineered complex SQL queries using Joins, Aggregations, and Window Functions.
 
-**Jarvis Remote Desktop (Infrastructure)**: Provisioned and configured a Google Cloud Platform (GCP) Virtual Machine with Rocky Linux to serve as a dedicated remote development environment. Orchestrated the installation of Docker and VNC servers, and configured firewall rules for secure access.
-
 **Data Engineering PoC (London Gift Shop)**: Engineered a Proof of Concept (PoC) for a retail data pipeline using Python and Pandas. Implemented data ingestion and transformation logic to process store transactions and inventory data, creating a scalable foundation for business intelligence and reporting.
 
 **Jarvis Remote Desktop (Infrastructure)**: Provisioned and configured a Google Cloud Platform (GCP) Virtual Machine with Rocky Linux to serve as a dedicated remote development environment. Orchestrated the installation of Docker and VNC servers, and configured firewall rules for secure access.
