@@ -43,9 +43,9 @@ public class JavaGrepImp implements JavaGrep {
         List<String> matchedLines = new ArrayList<>();
         // Traverse directory recursively
         for (File file : listFiles(rootPath)) {
-            // Read file line by line
+
             for (String line : readLines(file)) {
-                // Filter by regex pattern
+
                 if (containsPattern(line)) {
                     matchedLines.add(line);
                 }
@@ -64,7 +64,7 @@ public class JavaGrepImp implements JavaGrep {
         if (files != null) {
             for (File file : files) {
                 if (file.isDirectory()) {
-                    // Recursive call for sub-directories
+
                     fileList.addAll(listFiles(file.getAbsolutePath()));
                 } else {
                     fileList.add(file);
@@ -91,7 +91,7 @@ public class JavaGrepImp implements JavaGrep {
 
     @Override
     public boolean containsPattern(String line) {
-        // Regex matching logic
+
         Pattern pattern = Pattern.compile(regex);
         Matcher matcher = pattern.matcher(line);
         return matcher.matches();
@@ -99,7 +99,7 @@ public class JavaGrepImp implements JavaGrep {
 
     @Override
     public void writeToFile(List<String> lines) throws IOException {
-        // BufferedWriter for efficient writing
+
         try (BufferedWriter bw = new BufferedWriter(new FileWriter(outFile))) {
             for (String line : lines) {
                 bw.write(line);
