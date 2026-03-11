@@ -18,6 +18,10 @@
       "name": "Jarvis RDBMS (Relational Database)"
     },
     {
+      "description": "Developed a Java application to search for text patterns within files recursively across directories. Leveraged Lambda expressions and the Streams API for efficient data processing, while implementing SLF4J for application logging.",
+      "name": "Java Grep App"
+    },
+    {
       "description": "Engineered a Proof of Concept (PoC) for a retail data pipeline using Python and Pandas. Implemented data ingestion and transformation logic to process store transactions and inventory data, creating a scalable foundation for business intelligence and reporting.",
       "name": "Data Engineering PoC (London Gift Shop)"
     },
@@ -61,14 +65,16 @@
       "JavaScript",
       "Google Cloud Platform (GCP)",
       "HTML/CSS",
-      "Java"
+      "Java",
+      "MongoDB",
+      "Crontab/Automation"
     ],
     "familiar": [
-      "MongoDB",
       "React",
       "Tableau",
       "JSON/YAML",
-      "Jira"
+      "Jira",
+      "Docker Compose"
     ],
     "proficient": [
       "SQL (PostgreSQL)",

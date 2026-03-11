@@ -24,12 +24,15 @@ skills:
     - Google Cloud Platform (GCP)
     - HTML/CSS
     - Java
+    -  MongoDB
+    - Crontab/Automation
+
   familiar:
-    - MongoDB
     - React
     - Tableau
     - JSON/YAML
     - Jira
+    - Docker Compose
 
 # ---------------------------------------------------------
 # JARVIS PROJECTS
@@ -49,6 +52,9 @@ highlighted_projects:
   - name: Jarvis RDBMS (Relational Database)
     description: Designed and deployed a containerized PostgreSQL database for a country club management system using Docker. Architected the database schema (DDL) and managed data ingestion for members, facilities, and bookings. Engineered complex SQL queries using Joins, Aggregations, and Window Functions.
 
+
+  - name: Java Grep App
+    description: Developed a Java application to search for text patterns within files recursively across directories. Leveraged Lambda expressions and the Streams API for efficient data processing, while implementing SLF4J for application logging. 
 
   - name: Data Engineering PoC (London Gift Shop)
     description: Engineered a Proof of Concept (PoC) for a retail data pipeline using Python and Pandas. Implemented data ingestion and transformation logic to process store transactions and inventory data, creating a scalable foundation for business intelligence and reporting.
