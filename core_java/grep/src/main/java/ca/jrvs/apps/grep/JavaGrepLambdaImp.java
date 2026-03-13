@@ -31,8 +31,6 @@ public class JavaGrepLambdaImp extends JavaGrepImp {
 
     @Override
     public void process() throws IOException {
-        // Flattened approach: list files -> stream lines -> filter -> collect to list -> write
-        // This avoids nested for-loops used in the imperative version
         List<String> matchedLines = listFiles(getRootPath()).stream()
                 .flatMap(file -> readLines(file).stream())
                 .filter(this::containsPattern)
