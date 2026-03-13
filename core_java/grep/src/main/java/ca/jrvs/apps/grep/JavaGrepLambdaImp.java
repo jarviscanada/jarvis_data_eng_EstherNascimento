@@ -55,7 +55,6 @@ public class JavaGrepLambdaImp extends JavaGrepImp {
     @Override
     public List<String> readLines(File inputFile) {
         try {
-            // Files.lines returns a Stream<String> (lazy evaluation)
             return Files.lines(inputFile.toPath()).collect(Collectors.toList());
         } catch (IOException e) {
             throw new RuntimeException("Error reading lines from " + inputFile.getName(), e);
