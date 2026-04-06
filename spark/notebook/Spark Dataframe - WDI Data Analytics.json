@@ -1,0 +1,1185 @@
+﻿{
+  "paragraphs": [
+    {
+      "text": "%md\n# SparkSession\n\nSparkSession is automatically created when you start up a Notebook (e.g. Zeppelin, Databricks)\n\n<img src=\"https://i.imgur.com/5Ai45fb.jpg\" width=500px>",
+      "user": "anonymous",
+      "dateUpdated": "2026-03-23T16:00:53+0000",
+      "progress": 0,
+      "config": {
+        "tableHide": false,
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true,
+          "completionKey": "TAB",
+          "completionSupport": false
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/markdown",
+        "fontSize": 9,
+        "editorHide": true,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "<div class=\"markdown-body\">\n<h1>SparkSession</h1>\n<p>SparkSession is automatically created when you start up a Notebook (e.g. Zeppelin, Databricks)</p>\n<img src=\"https://i.imgur.com/5Ai45fb.jpg\" width=500px>\n\n</div>"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1774279498478_2009026816",
+      "id": "20200924-193240_1472050812",
+      "dateCreated": "2026-03-23T15:24:58+0000",
+      "dateStarted": "2026-03-23T16:00:53+0000",
+      "dateFinished": "2026-03-23T16:00:53+0000",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:207"
+    },
+    {
+      "text": "%spark\n//Scala SparkSession\nspark",
+      "user": "anonymous",
+      "dateUpdated": "2026-03-23T15:26:25+0000",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/scala",
+        "fontSize": 9,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mres1\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.sql.SparkSession\u001b[0m = org.apache.spark.sql.SparkSession@14efbc70\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1774279498480_1840253376",
+      "id": "20200924-184153_664614999",
+      "dateCreated": "2026-03-23T15:24:58+0000",
+      "dateStarted": "2026-03-23T15:26:25+0000",
+      "dateFinished": "2026-03-23T15:27:18+0000",
+      "status": "FINISHED",
+      "$$hashKey": "object:208"
+    },
+    {
+      "text": "%spark.pyspark\n#PySpark SparkSession\nspark",
+      "user": "anonymous",
+      "dateUpdated": "2026-03-23T16:01:07+0000",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "python",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/python",
+        "fontSize": 9,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\n            <div>\n                <p><b>SparkSession - hive</b></p>\n                \n        <div>\n            <p><b>SparkContext</b></p>\n\n            <p><a href=\"http://jarvis-spark-cluster-v2-m.northamerica-northeast2-b.c.solid-future-484216-h9.internal:44709\">Spark UI</a></p>\n\n            <dl>\n              <dt>Version</dt>\n                <dd><code>v3.3.2</code></dd>\n              <dt>Master</dt>\n                <dd><code>yarn</code></dd>\n              <dt>AppName</dt>\n                <dd><code>spark-shared_process</code></dd>\n            </dl>\n        </div>\n        \n            </div>\n        "
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1774279498480_2050625517",
+      "id": "20200924-184216_1856886640",
+      "dateCreated": "2026-03-23T15:24:58+0000",
+      "dateStarted": "2026-03-23T16:01:07+0000",
+      "dateFinished": "2026-03-23T16:01:08+0000",
+      "status": "FINISHED",
+      "$$hashKey": "object:209"
+    },
+    {
+      "text": "%md \n\n# Show DataFrame\n\n`df.show()` is the Spark native API that displays data but it's not pretty. \n\n`z.show(df)` is a Zeppelin build-in feature that allows you to show a df result in a pretty way",
+      "user": "anonymous",
+      "dateUpdated": "2026-03-23T16:01:11+0000",
+      "progress": 0,
+      "config": {
+        "tableHide": false,
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true,
+          "completionKey": "TAB",
+          "completionSupport": false
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/markdown",
+        "fontSize": 9,
+        "editorHide": true,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "<div class=\"markdown-body\">\n<h1>Show DataFrame</h1>\n<p><code>df.show()</code> is the Spark native API that displays data but it&rsquo;s not pretty.</p>\n<p><code>z.show(df)</code> is a Zeppelin build-in feature that allows you to show a df result in a pretty way</p>\n\n</div>"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1774279498480_183606412",
+      "id": "20200924-193529_188023260",
+      "dateCreated": "2026-03-23T15:24:58+0000",
+      "dateStarted": "2026-03-23T16:01:11+0000",
+      "dateFinished": "2026-03-23T16:01:11+0000",
+      "status": "FINISHED",
+      "$$hashKey": "object:210"
+    },
+    {
+      "text": "%spark.pyspark\n\n#List all hive tables in a df\ntables_df = spark.sql(\"show tables\")",
+      "user": "anonymous",
+      "dateUpdated": "2026-03-23T16:01:13+0000",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "python",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/python",
+        "fontSize": 9,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": []
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1774279498480_1814914348",
+      "id": "20200924-193839_1624951483",
+      "dateCreated": "2026-03-23T15:24:58+0000",
+      "dateStarted": "2026-03-23T16:01:13+0000",
+      "dateFinished": "2026-03-23T16:01:14+0000",
+      "status": "FINISHED",
+      "$$hashKey": "object:211"
+    },
+    {
+      "text": "%spark.pyspark\n\ntables_df.show()",
+      "user": "anonymous",
+      "dateUpdated": "2026-03-23T15:28:35+0000",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "python",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/python",
+        "fontSize": 9,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "+---------+---------------+-----------+\n|namespace|      tableName|isTemporary|\n+---------+---------------+-----------+\n|  default|wdi_csv_parquet|      false|\n+---------+---------------+-----------+\n\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://jarvis-spark-cluster-v2-m.northamerica-northeast2-b.c.solid-future-484216-h9.internal:44709/jobs/job?id=0",
+              "$$hashKey": "object:927"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1774279498480_1781485180",
+      "id": "20200924-193721_1495175077",
+      "dateCreated": "2026-03-23T15:24:58+0000",
+      "dateStarted": "2026-03-23T15:28:35+0000",
+      "dateFinished": "2026-03-23T15:28:39+0000",
+      "status": "FINISHED",
+      "$$hashKey": "object:212"
+    },
+    {
+      "text": "%spark.pyspark\nz.show(tables_df)",
+      "user": "anonymous",
+      "dateUpdated": "2026-03-23T15:28:46+0000",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "python",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/python",
+        "fontSize": 9,
+        "results": {
+          "0": {
+            "graph": {
+              "mode": "table",
+              "height": 300,
+              "optionOpen": false,
+              "setting": {
+                "table": {
+                  "tableGridState": {},
+                  "tableColumnTypeState": {
+                    "names": {
+                      "namespace": "string",
+                      "tableName": "string",
+                      "isTemporary": "string"
+                    },
+                    "updated": false
+                  },
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  },
+                  "updated": false,
+                  "initialized": false
+                }
+              },
+              "commonSetting": {}
+            }
+          }
+        },
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TABLE",
+            "data": "namespace\ttableName\tisTemporary\ndefault\twdi_csv_parquet\tfalse\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1774279498481_1075583699",
+      "id": "20200924-184243_46563422",
+      "dateCreated": "2026-03-23T15:24:58+0000",
+      "dateStarted": "2026-03-23T15:28:45+0000",
+      "dateFinished": "2026-03-23T15:28:45+0000",
+      "status": "FINISHED",
+      "$$hashKey": "object:213"
+    },
+    {
+      "text": "%md \n\n# Spark SQL vs Dataframe\n\n`%sql` is the Spark SQL interpreter\n\n`%spark.pyspark` is the PySpark interpreter\n\n`%spark` is the Spark Scala interpreter",
+      "user": "anonymous",
+      "dateUpdated": "2026-03-23T15:24:58+0000",
+      "progress": 0,
+      "config": {
+        "tableHide": false,
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true,
+          "completionKey": "TAB",
+          "completionSupport": false
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/markdown",
+        "fontSize": 9,
+        "editorHide": true,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "<div class=\"markdown-body\">\n<h1>Spark SQL vs Dataframe</h1>\n<p><code>%sql</code> is the Spark SQL interpreter</p>\n<p><code>%spark.pyspark</code> is the PySpark interpreter</p>\n<p><code>%spark</code> is the Spark Scala interpreter</p>\n</div>"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1774279498482_579288057",
+      "id": "20200924-194044_351534117",
+      "dateCreated": "2026-03-23T15:24:58+0000",
+      "status": "READY",
+      "$$hashKey": "object:214"
+    },
+    {
+      "text": "%sql\n\nselect count(1) from wdi_csv_parquet",
+      "user": "anonymous",
+      "dateUpdated": "2026-03-23T15:24:58+0000",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "sql",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/sql",
+        "fontSize": 9,
+        "results": {
+          "0": {
+            "graph": {
+              "mode": "table",
+              "height": 300,
+              "optionOpen": false,
+              "setting": {
+                "table": {
+                  "tableGridState": {},
+                  "tableColumnTypeState": {
+                    "names": {
+                      "count(1)": "string"
+                    },
+                    "updated": false
+                  },
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  },
+                  "updated": false,
+                  "initialized": false
+                }
+              },
+              "commonSetting": {}
+            }
+          }
+        },
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TABLE",
+            "data": "count(1)\n21759413\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1774279498483_1922957989",
+      "id": "20200924-185443_1507376390",
+      "dateCreated": "2026-03-23T15:24:58+0000",
+      "status": "READY",
+      "$$hashKey": "object:215"
+    },
+    {
+      "text": "%spark.pyspark\n\n#Read Hive data to a df (this is lazy)\nwdi_df = spark.sql(\"SELECT * from wdi_csv_parquet\")\n#Persist df in memory for fast futuer access\nwdi_df = wdi_df.cache()\nwdi_df.printSchema()\n\n#Spark action is eager\nz.show(wdi_df.count())",
+      "user": "anonymous",
+      "dateUpdated": "2026-03-23T15:59:23+0000",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "python",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/python",
+        "fontSize": 9,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "root\n |-- year: integer (nullable = true)\n |-- countryname: string (nullable = true)\n |-- countrycode: string (nullable = true)\n |-- indicatorname: string (nullable = true)\n |-- indicatorcode: string (nullable = true)\n |-- indicatorvalue: float (nullable = true)\n\n21759413\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://jarvis-spark-cluster-v2-m.northamerica-northeast2-b.c.solid-future-484216-h9.internal:44709/jobs/job?id=3",
+              "$$hashKey": "object:1093"
+            },
+            {
+              "jobUrl": "http://jarvis-spark-cluster-v2-m.northamerica-northeast2-b.c.solid-future-484216-h9.internal:44709/jobs/job?id=4",
+              "$$hashKey": "object:1094"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1774279498483_1843012873",
+      "id": "20200924-185805_1139438367",
+      "dateCreated": "2026-03-23T15:24:58+0000",
+      "dateStarted": "2026-03-23T15:59:23+0000",
+      "dateFinished": "2026-03-23T16:00:53+0000",
+      "status": "FINISHED",
+      "$$hashKey": "object:216"
+    },
+    {
+      "text": "%md \n\n# Show Historical GDP for Canada\n\n- Re-write the hive query (left cell) using PySpark df",
+      "user": "anonymous",
+      "dateUpdated": "2026-03-23T16:03:01+0000",
+      "progress": 0,
+      "config": {
+        "tableHide": false,
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true,
+          "completionKey": "TAB",
+          "completionSupport": false
+        },
+        "colWidth": 5,
+        "editorMode": "ace/mode/markdown",
+        "fontSize": 9,
+        "editorHide": true,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "<div class=\"markdown-body\">\n<h1>Show Historical GDP for Canada</h1>\n<ul>\n<li>Re-write the hive query (left cell) using PySpark df</li>\n</ul>\n\n</div>"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1774279498483_412679445",
+      "id": "20200924-194555_411298048",
+      "dateCreated": "2026-03-23T15:24:58+0000",
+      "dateStarted": "2026-03-23T16:03:01+0000",
+      "dateFinished": "2026-03-23T16:03:01+0000",
+      "status": "FINISHED",
+      "$$hashKey": "object:217"
+    },
+    {
+      "text": "%sql\nSELECT year, IndicatorValue as GDP\nFROM wdi_csv_parquet\nWHERE indicatorCode = 'NY.GDP.MKTP.KD.ZG' and countryName = 'Canada'\nORDER BY year\n",
+      "user": "anonymous",
+      "dateUpdated": "2026-03-23T20:36:04+0000",
+      "progress": 50,
+      "config": {
+        "editorSetting": {
+          "language": "sql",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 7,
+        "editorMode": "ace/mode/sql",
+        "fontSize": 9,
+        "results": {
+          "0": {
+            "graph": {
+              "mode": "table",
+              "height": 300,
+              "optionOpen": false,
+              "setting": {
+                "table": {
+                  "tableGridState": {},
+                  "tableColumnTypeState": {
+                    "names": {
+                      "year": "string",
+                      "GDP": "string"
+                    },
+                    "updated": false
+                  },
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  },
+                  "updated": false,
+                  "initialized": false
+                },
+                "multiBarChart": {
+                  "rotate": {
+                    "degree": "-45"
+                  },
+                  "xLabelStatus": "default"
+                }
+              },
+              "commonSetting": {},
+              "keys": [],
+              "groups": [],
+              "values": []
+            },
+            "helium": {}
+          }
+        },
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TABLE",
+            "data": "year\tGDP\n1960\t0.0\n1961\t3.1632917\n1962\t7.1167793\n1963\t5.181776\n1964\t6.6994567\n1965\t6.636545\n1966\t6.584965\n1967\t2.9153104\n1968\t5.295342\n1969\t5.2600007\n1970\t3.2556136\n1971\t4.1176577\n1972\t5.4458556\n1973\t6.964203\n1974\t3.6909876\n1975\t1.8229731\n1976\t5.1993027\n1977\t3.4582305\n1978\t3.9535913\n1979\t3.8049228\n1980\t2.162617\n1981\t3.5031195\n1982\t-3.202025\n1983\t2.5985727\n1984\t5.92535\n1985\t4.7340827\n1986\t2.1618156\n1987\t4.0964646\n1988\t4.429401\n1989\t2.323974\n1990\t0.15434603\n1991\t-2.1256921\n1992\t0.88297606\n1993\t2.6552358\n1994\t4.4934745\n1995\t2.6777084\n1996\t1.611048\n1997\t4.2798123\n1998\t3.8817592\n1999\t5.163211\n2000\t5.18269\n2001\t1.7708191\n2002\t3.0100162\n2003\t1.8022733\n2004\t3.085961\n2005\t3.2013822\n2006\t2.6234126\n2007\t2.0627477\n2008\t1.000361\n2009\t-2.9495876\n2010\t3.0835142\n2011\t3.141219\n2012\t1.7454723\n2013\t2.2180681\n2014\t2.4728925\n2015\t1.0782688\n2016\t0.0\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://jarvis-spark-cluster-v2-m.northamerica-northeast2-b.c.solid-future-484216-h9.internal:44709/jobs/job?id=11",
+              "$$hashKey": "object:1184"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1774279498483_1035346816",
+      "id": "20200925-000736_1945332225",
+      "dateCreated": "2026-03-23T15:24:58+0000",
+      "dateStarted": "2026-03-23T20:35:56+0000",
+      "dateFinished": "2026-03-23T20:36:01+0000",
+      "status": "FINISHED",
+      "$$hashKey": "object:218"
+    },
+    {
+      "text": "\n\n%spark.pyspark\n# 1. Let's see if 'Canada' exists and how it is spelled\nwdi_df.filter(col(\"countryname\").like(\"Can%\")).select(\"countryname\").distinct().show()\n\n# 2. Try the filter again with a 'Contains' approach to be safe\nwdi_canada_df = wdi_df.filter(col(\"countryname\") == \"Canada\")\n\n# 3. Check if the DataFrame is actually empty\nprint(f\"Total rows for Canada: {wdi_canada_df.count()}\")",
+      "user": "anonymous",
+      "dateUpdated": "2026-03-23T16:05:37+0000",
+      "progress": 100,
+      "config": {
+        "editorSetting": {
+          "language": "python",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/python",
+        "fontSize": 9,
+        "results": {
+          "0": {
+            "graph": {
+              "mode": "table",
+              "height": 300,
+              "optionOpen": false,
+              "setting": {
+                "multiBarChart": {
+                  "rotate": {
+                    "degree": "-45"
+                  },
+                  "xLabelStatus": "default"
+                },
+                "table": {
+                  "tableGridState": {},
+                  "tableColumnTypeState": {
+                    "names": {
+                      "year": "string",
+                      "indicatorvalue": "string"
+                    },
+                    "updated": false
+                  },
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  },
+                  "updated": false,
+                  "initialized": false
+                }
+              },
+              "commonSetting": {},
+              "keys": [
+                {
+                  "name": "year",
+                  "index": 0,
+                  "aggr": "sum"
+                }
+              ],
+              "groups": [],
+              "values": []
+            },
+            "helium": {}
+          }
+        },
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "+-----------+\n|countryname|\n+-----------+\n|     Canada|\n+-----------+\n\nTotal rows for Canada: 82422\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://jarvis-spark-cluster-v2-m.northamerica-northeast2-b.c.solid-future-484216-h9.internal:44709/jobs/job?id=7",
+              "$$hashKey": "object:1230"
+            },
+            {
+              "jobUrl": "http://jarvis-spark-cluster-v2-m.northamerica-northeast2-b.c.solid-future-484216-h9.internal:44709/jobs/job?id=8",
+              "$$hashKey": "object:1231"
+            },
+            {
+              "jobUrl": "http://jarvis-spark-cluster-v2-m.northamerica-northeast2-b.c.solid-future-484216-h9.internal:44709/jobs/job?id=9",
+              "$$hashKey": "object:1232"
+            },
+            {
+              "jobUrl": "http://jarvis-spark-cluster-v2-m.northamerica-northeast2-b.c.solid-future-484216-h9.internal:44709/jobs/job?id=10",
+              "$$hashKey": "object:1233"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1774279498483_1725391628",
+      "id": "20200924-192035_1023279440",
+      "dateCreated": "2026-03-23T15:24:58+0000",
+      "dateStarted": "2026-03-23T16:05:37+0000",
+      "dateFinished": "2026-03-23T16:05:43+0000",
+      "status": "FINISHED",
+      "$$hashKey": "object:219"
+    },
+    {
+      "text": "%md \n\n# Show GDP for Each County and Sort By Year\n\n- Re-write the hive query (left cell) using PySpark df  \n    - hint: you can create multiple DFs ",
+      "user": "anonymous",
+      "dateUpdated": "2026-03-23T15:24:58+0000",
+      "progress": 0,
+      "config": {
+        "tableHide": false,
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true,
+          "completionKey": "TAB",
+          "completionSupport": false
+        },
+        "colWidth": 5,
+        "editorMode": "ace/mode/markdown",
+        "fontSize": 9,
+        "editorHide": true,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "<div class=\"markdown-body\">\n<h1>Show GDP for Each County and Sort By Year</h1>\n<ul>\n  <li>Re-write the hive query (left cell) using PySpark df\n    <ul>\n      <li>hint: you can create multiple DFs</li>\n    </ul>\n  </li>\n</ul>\n</div>"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1774279498484_1499418587",
+      "id": "20200924-195213_2033277524",
+      "dateCreated": "2026-03-23T15:24:58+0000",
+      "status": "READY",
+      "$$hashKey": "object:220"
+    },
+    {
+      "text": "%sql\nSELECT countryname,\n       year,\n       indicatorcode,\n       indicatorvalue\nFROM wdi_csv_parquet\nWHERE indicatorcode = 'NY.GDP.MKTP.KD.ZG'\n  AND countryname IN ('Canada', 'United States')\nDISTRIBUTE BY countryname\nSORT BY countryname, year ASC",
+      "user": "anonymous",
+      "dateUpdated": "2026-03-23T20:41:40+0000",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "sql",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 7,
+        "editorMode": "ace/mode/sql",
+        "fontSize": 9,
+        "results": {
+          "0": {
+            "graph": {
+              "mode": "table",
+              "height": 300,
+              "optionOpen": false,
+              "setting": {
+                "table": {
+                  "tableGridState": {},
+                  "tableColumnTypeState": {
+                    "names": {
+                      "countryname": "string",
+                      "year": "string",
+                      "indicatorcode": "string",
+                      "indicatorvalue": "string"
+                    },
+                    "updated": false
+                  },
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  },
+                  "updated": false,
+                  "initialized": false
+                },
+                "multiBarChart": {
+                  "rotate": {
+                    "degree": "-45"
+                  },
+                  "xLabelStatus": "default"
+                },
+                "stackedAreaChart": {
+                  "rotate": {
+                    "degree": "-45"
+                  },
+                  "xLabelStatus": "default"
+                }
+              },
+              "commonSetting": {},
+              "keys": [],
+              "groups": [],
+              "values": []
+            },
+            "helium": {}
+          }
+        },
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TABLE",
+            "data": "countryname\tyear\tindicatorcode\tindicatorvalue\nCanada\t1960\tNY.GDP.MKTP.KD.ZG\t0.0\nCanada\t1961\tNY.GDP.MKTP.KD.ZG\t3.1632917\nCanada\t1962\tNY.GDP.MKTP.KD.ZG\t7.1167793\nCanada\t1963\tNY.GDP.MKTP.KD.ZG\t5.181776\nCanada\t1964\tNY.GDP.MKTP.KD.ZG\t6.6994567\nCanada\t1965\tNY.GDP.MKTP.KD.ZG\t6.636545\nCanada\t1966\tNY.GDP.MKTP.KD.ZG\t6.584965\nCanada\t1967\tNY.GDP.MKTP.KD.ZG\t2.9153104\nCanada\t1968\tNY.GDP.MKTP.KD.ZG\t5.295342\nCanada\t1969\tNY.GDP.MKTP.KD.ZG\t5.2600007\nCanada\t1970\tNY.GDP.MKTP.KD.ZG\t3.2556136\nCanada\t1971\tNY.GDP.MKTP.KD.ZG\t4.1176577\nCanada\t1972\tNY.GDP.MKTP.KD.ZG\t5.4458556\nCanada\t1973\tNY.GDP.MKTP.KD.ZG\t6.964203\nCanada\t1974\tNY.GDP.MKTP.KD.ZG\t3.6909876\nCanada\t1975\tNY.GDP.MKTP.KD.ZG\t1.8229731\nCanada\t1976\tNY.GDP.MKTP.KD.ZG\t5.1993027\nCanada\t1977\tNY.GDP.MKTP.KD.ZG\t3.4582305\nCanada\t1978\tNY.GDP.MKTP.KD.ZG\t3.9535913\nCanada\t1979\tNY.GDP.MKTP.KD.ZG\t3.8049228\nCanada\t1980\tNY.GDP.MKTP.KD.ZG\t2.162617\nCanada\t1981\tNY.GDP.MKTP.KD.ZG\t3.5031195\nCanada\t1982\tNY.GDP.MKTP.KD.ZG\t-3.202025\nCanada\t1983\tNY.GDP.MKTP.KD.ZG\t2.5985727\nCanada\t1984\tNY.GDP.MKTP.KD.ZG\t5.92535\nCanada\t1985\tNY.GDP.MKTP.KD.ZG\t4.7340827\nCanada\t1986\tNY.GDP.MKTP.KD.ZG\t2.1618156\nCanada\t1987\tNY.GDP.MKTP.KD.ZG\t4.0964646\nCanada\t1988\tNY.GDP.MKTP.KD.ZG\t4.429401\nCanada\t1989\tNY.GDP.MKTP.KD.ZG\t2.323974\nCanada\t1990\tNY.GDP.MKTP.KD.ZG\t0.15434603\nCanada\t1991\tNY.GDP.MKTP.KD.ZG\t-2.1256921\nCanada\t1992\tNY.GDP.MKTP.KD.ZG\t0.88297606\nCanada\t1993\tNY.GDP.MKTP.KD.ZG\t2.6552358\nCanada\t1994\tNY.GDP.MKTP.KD.ZG\t4.4934745\nCanada\t1995\tNY.GDP.MKTP.KD.ZG\t2.6777084\nCanada\t1996\tNY.GDP.MKTP.KD.ZG\t1.611048\nCanada\t1997\tNY.GDP.MKTP.KD.ZG\t4.2798123\nCanada\t1998\tNY.GDP.MKTP.KD.ZG\t3.8817592\nCanada\t1999\tNY.GDP.MKTP.KD.ZG\t5.163211\nCanada\t2000\tNY.GDP.MKTP.KD.ZG\t5.18269\nCanada\t2001\tNY.GDP.MKTP.KD.ZG\t1.7708191\nCanada\t2002\tNY.GDP.MKTP.KD.ZG\t3.0100162\nCanada\t2003\tNY.GDP.MKTP.KD.ZG\t1.8022733\nCanada\t2004\tNY.GDP.MKTP.KD.ZG\t3.085961\nCanada\t2005\tNY.GDP.MKTP.KD.ZG\t3.2013822\nCanada\t2006\tNY.GDP.MKTP.KD.ZG\t2.6234126\nCanada\t2007\tNY.GDP.MKTP.KD.ZG\t2.0627477\nCanada\t2008\tNY.GDP.MKTP.KD.ZG\t1.000361\nCanada\t2009\tNY.GDP.MKTP.KD.ZG\t-2.9495876\nCanada\t2010\tNY.GDP.MKTP.KD.ZG\t3.0835142\nCanada\t2011\tNY.GDP.MKTP.KD.ZG\t3.141219\nCanada\t2012\tNY.GDP.MKTP.KD.ZG\t1.7454723\nCanada\t2013\tNY.GDP.MKTP.KD.ZG\t2.2180681\nCanada\t2014\tNY.GDP.MKTP.KD.ZG\t2.4728925\nCanada\t2015\tNY.GDP.MKTP.KD.ZG\t1.0782688\nCanada\t2016\tNY.GDP.MKTP.KD.ZG\t0.0\nUnited States\t1960\tNY.GDP.MKTP.KD.ZG\t0.0\nUnited States\t1961\tNY.GDP.MKTP.KD.ZG\t2.3\nUnited States\t1962\tNY.GDP.MKTP.KD.ZG\t6.1\nUnited States\t1963\tNY.GDP.MKTP.KD.ZG\t4.4\nUnited States\t1964\tNY.GDP.MKTP.KD.ZG\t5.8\nUnited States\t1965\tNY.GDP.MKTP.KD.ZG\t6.4\nUnited States\t1966\tNY.GDP.MKTP.KD.ZG\t6.5\nUnited States\t1967\tNY.GDP.MKTP.KD.ZG\t2.5\nUnited States\t1968\tNY.GDP.MKTP.KD.ZG\t4.8\nUnited States\t1969\tNY.GDP.MKTP.KD.ZG\t3.1\nUnited States\t1970\tNY.GDP.MKTP.KD.ZG\t3.2068074\nUnited States\t1971\tNY.GDP.MKTP.KD.ZG\t3.2954767\nUnited States\t1972\tNY.GDP.MKTP.KD.ZG\t5.2632627\nUnited States\t1973\tNY.GDP.MKTP.KD.ZG\t5.643125\nUnited States\t1974\tNY.GDP.MKTP.KD.ZG\t-0.5171546\nUnited States\t1975\tNY.GDP.MKTP.KD.ZG\t-0.19767854\nUnited States\t1976\tNY.GDP.MKTP.KD.ZG\t5.3860903\nUnited States\t1977\tNY.GDP.MKTP.KD.ZG\t4.6085973\nUnited States\t1978\tNY.GDP.MKTP.KD.ZG\t5.561685\nUnited States\t1979\tNY.GDP.MKTP.KD.ZG\t3.1756907\nUnited States\t1980\tNY.GDP.MKTP.KD.ZG\t-0.24459623\nUnited States\t1981\tNY.GDP.MKTP.KD.ZG\t2.5944705\nUnited States\t1982\tNY.GDP.MKTP.KD.ZG\t-1.910891\nUnited States\t1983\tNY.GDP.MKTP.KD.ZG\t4.6324573\nUnited States\t1984\tNY.GDP.MKTP.KD.ZG\t7.259087\nUnited States\t1985\tNY.GDP.MKTP.KD.ZG\t4.2387376\nUnited States\t1986\tNY.GDP.MKTP.KD.ZG\t3.5116146\nUnited States\t1987\tNY.GDP.MKTP.KD.ZG\t3.4617476\nUnited States\t1988\tNY.GDP.MKTP.KD.ZG\t4.203972\nUnited States\t1989\tNY.GDP.MKTP.KD.ZG\t3.680524\nUnited States\t1990\tNY.GDP.MKTP.KD.ZG\t1.9193703\nUnited States\t1991\tNY.GDP.MKTP.KD.ZG\t-0.07408453\nUnited States\t1992\tNY.GDP.MKTP.KD.ZG\t3.555396\nUnited States\t1993\tNY.GDP.MKTP.KD.ZG\t2.7458568\nUnited States\t1994\tNY.GDP.MKTP.KD.ZG\t4.0376434\nUnited States\t1995\tNY.GDP.MKTP.KD.ZG\t2.7189758\nUnited States\t1996\tNY.GDP.MKTP.KD.ZG\t3.7958813\nUnited States\t1997\tNY.GDP.MKTP.KD.ZG\t4.4870267\nUnited States\t1998\tNY.GDP.MKTP.KD.ZG\t4.449911\nUnited States\t1999\tNY.GDP.MKTP.KD.ZG\t4.6851997\nUnited States\t2000\tNY.GDP.MKTP.KD.ZG\t4.0921764\nUnited States\t2001\tNY.GDP.MKTP.KD.ZG\t0.97598183\nUnited States\t2002\tNY.GDP.MKTP.KD.ZG\t1.7861277\nUnited States\t2003\tNY.GDP.MKTP.KD.ZG\t2.806776\nUnited States\t2004\tNY.GDP.MKTP.KD.ZG\t3.7857428\nUnited States\t2005\tNY.GDP.MKTP.KD.ZG\t3.345216\nUnited States\t2006\tNY.GDP.MKTP.KD.ZG\t2.6666257\nUnited States\t2007\tNY.GDP.MKTP.KD.ZG\t1.7785703\nUnited States\t2008\tNY.GDP.MKTP.KD.ZG\t-0.29162145\nUnited States\t2009\tNY.GDP.MKTP.KD.ZG\t-2.7755296\nUnited States\t2010\tNY.GDP.MKTP.KD.ZG\t2.5319207\nUnited States\t2011\tNY.GDP.MKTP.KD.ZG\t1.6014546\nUnited States\t2012\tNY.GDP.MKTP.KD.ZG\t2.224031\nUnited States\t2013\tNY.GDP.MKTP.KD.ZG\t1.489525\nUnited States\t2014\tNY.GDP.MKTP.KD.ZG\t2.4277956\nUnited States\t2015\tNY.GDP.MKTP.KD.ZG\t2.4259706\nUnited States\t2016\tNY.GDP.MKTP.KD.ZG\t0.0\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://jarvis-spark-cluster-v2-m.northamerica-northeast2-b.c.solid-future-484216-h9.internal:44709/jobs/job?id=14",
+              "$$hashKey": "object:1331"
+            },
+            {
+              "jobUrl": "http://jarvis-spark-cluster-v2-m.northamerica-northeast2-b.c.solid-future-484216-h9.internal:44709/jobs/job?id=15",
+              "$$hashKey": "object:1332"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1774279498484_1026696227",
+      "id": "20200925-000433_1826008639",
+      "dateCreated": "2026-03-23T15:24:58+0000",
+      "dateStarted": "2026-03-23T20:41:34+0000",
+      "dateFinished": "2026-03-23T20:41:38+0000",
+      "status": "FINISHED",
+      "$$hashKey": "object:221"
+    },
+    {
+      "text": "%spark.pyspark\n\n#Your solution goes here (please remove this commnet from you copy)\n",
+      "user": "anonymous",
+      "dateUpdated": "2026-03-23T15:56:14+0000",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "python",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/python",
+        "fontSize": 9,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": []
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1774279498489_988695192",
+      "id": "20200925-000527_506398891",
+      "dateCreated": "2026-03-23T15:24:58+0000",
+      "dateStarted": "2026-03-23T15:56:14+0000",
+      "dateFinished": "2026-03-23T15:56:14+0000",
+      "status": "FINISHED",
+      "$$hashKey": "object:222"
+    },
+    {
+      "text": "%md\n\n# Find the highest GDP for each country\n\n- Re-write the hive query (left cell) using PySpark df\n",
+      "user": "anonymous",
+      "dateUpdated": "2026-03-23T15:24:58+0000",
+      "progress": 0,
+      "config": {
+        "tableHide": false,
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true,
+          "completionKey": "TAB",
+          "completionSupport": false
+        },
+        "colWidth": 5,
+        "editorMode": "ace/mode/markdown",
+        "fontSize": 9,
+        "editorHide": true,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "<div class=\"markdown-body\">\n<h1>Find the highest GDP for each country</h1>\n<ul>\n  <li>Re-write the hive query (left cell) using PySpark df</li>\n</ul>\n</div>"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1774279498489_1083980968",
+      "id": "20200925-000950_546215538",
+      "dateCreated": "2026-03-23T15:24:58+0000",
+      "status": "READY",
+      "$$hashKey": "object:223"
+    },
+    {
+      "text": "%sql\n\nSELECT wdi_csv_parquet.indicatorvalue AS value, \n       wdi_csv_parquet.year           AS year, \n       wdi_csv_parquet.countryname    AS country \nFROM   (SELECT Max(indicatorvalue) AS ind, \n               countryname \n        FROM   wdi_csv_parquet \n        WHERE  indicatorcode = 'NY.GDP.MKTP.KD.ZG' \n               AND indicatorvalue <> 0 \n        GROUP  BY countryname) t1 \n       INNER JOIN wdi_csv_parquet \n               ON t1.ind = wdi_csv_parquet.indicatorvalue \n                  AND t1.countryname = wdi_csv_parquet.countryname\n",
+      "user": "anonymous",
+      "dateUpdated": "2026-03-23T18:45:00+0000",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "sql",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 7,
+        "editorMode": "ace/mode/sql",
+        "fontSize": 9,
+        "results": {
+          "0": {
+            "graph": {
+              "mode": "multiBarChart",
+              "height": 300,
+              "optionOpen": false,
+              "setting": {
+                "table": {
+                  "tableGridState": {},
+                  "tableColumnTypeState": {
+                    "names": {
+                      "value": "string",
+                      "year": "string",
+                      "country": "string"
+                    },
+                    "updated": false
+                  },
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  },
+                  "updated": false,
+                  "initialized": false
+                },
+                "multiBarChart": {
+                  "rotate": {
+                    "degree": "-45"
+                  },
+                  "xLabelStatus": "default"
+                }
+              },
+              "commonSetting": {},
+              "keys": [
+                {
+                  "name": "value",
+                  "index": 0,
+                  "aggr": "sum"
+                }
+              ],
+              "groups": [],
+              "values": [
+                {
+                  "name": "year",
+                  "index": 1,
+                  "aggr": "sum"
+                }
+              ]
+            },
+            "helium": {}
+          }
+        },
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TABLE",
+            "data": "value\tyear\tcountry\n189.82993\t1965\tOman\n14.582442\t2007\tMonaco\n17.505634\t2000\tTimor-Leste\n19.560095\t1975\tMalta\n9.08357\t2010\tSouth Asia (IDA & IBRD)\n5.2550063\t1990\tGermany\n8.809809\t1986\tUruguay\n10.016272\t1970\tLate-demographic dividend\n12.344\t2007\tGeorgia\n6.5672135\t2006\tCentral Europe and the Baltics\n7.1167274\t1984\tNorth America\n21.200697\t1962\tCongo, Dem. Rep.\n15.106996\t1972\tMiddle East & North Africa\n25.027607\t1972\tSyrian Arab Republic\n8.1406555\t1993\tMicronesia, Fed. Sts.\n9.668261\t2006\tSmall states\n7.1668916\t1970\tAustralia\n9.849452\t2001\tPuerto Rico\n33.62937\t2004\tChad\n11.360282\t1964\tGuyana\n7.8144317\t1996\tAruba\n16.241957\t1968\tIsrael\n18.005667\t1970\tIDA blend\n11.730911\t1982\tMoldova\n6.645474\t1997\tCroatia\n11.353461\t1970\tPakistan\n13.060854\t1971\tGreenland\n23.171246\t1982\tIran, Islamic Rep.\n20.286634\t1985\tMali\n8.755049\t1973\tLatin America & the Caribbean (IDA & IBRD countries)\n34.31373\t1963\tAlgeria\n12.27793\t1992\tChile\n8.643095\t1965\tNetherlands\n14.040795\t2003\tArmenia\n8.618244\t2007\tLow & middle income\n9.227175\t1973\tLatin America & Caribbean (excluding high income)\n24.542517\t1986\tMarshall Islands\n13.833095\t1983\tVanuatu\n8.920647\t1973\tPhilippines\n6.275867\t1969\tAustria\n6.5399766\t1973\tUnited Kingdom\n6.6795015\t1984\tPacific island small states\n11.90548\t1964\tMexico\n13.160728\t1970\tEast Asia & Pacific (excluding high income)\n23.874775\t1980\tUnited Arab Emirates\n10.944692\t1988\tBulgaria\n12.393429\t1975\tGambia, The\n13.978692\t1973\tBrazil\n106.27981\t1997\tLiberia\n14.190637\t1989\tLao PDR\n27.690886\t1964\tMauritania\n5.8983297\t2007\tChannel Islands\n6.5584636\t1985\tTonga\n8.195589\t2004\tEurope & Central Asia (excluding high income)\n14.363636\t1966\tBermuda\n14.260685\t1980\tDominica\n8.645224\t2007\tMiddle income\n17.742718\t1972\tTunisia\n8.464381\t2007\tTanzania\n9.540481\t1995\tVietnam\n11.902191\t2006\tLatvia\n8.394322\t2004\tLower middle income\n9.481555\t1984\tCentral African Republic\n35.22408\t1995\tRwanda\n9.292035\t1995\tSan Marino\n11.149537\t1961\tGreece\n13.273064\t2005\tGrenada\n26.40488\t1973\tLesotho\n34.5\t2006\tAzerbaijan\n34.5\t2000\tAzerbaijan\n15.315924\t2007\tPanama\n9.742033\t1986\tMauritius\n13.129731\t2013\tSouth Sudan\n6.416388\t1993\tNew Zealand\n23.544891\t1990\tSt. Lucia\n14.036278\t2013\tParaguay\n19.688335\t1981\tCuba\n8.89603\t1965\tSouth Africa\n8.920504\t1976\tSenegal\n8.207598\t1992\tYemen, Rep.\n12.308128\t1994\tPeru\n14.787517\t1973\tKorea, Rep.\n6.308117\t1988\tGuinea\n6.7345076\t2010\tLow income\n10.583587\t1986\tSt. Kitts and Nevis\n15.240377\t2010\tSingapore\n7.9674854\t1972\tBolivia\n11.588021\t2004\tSub-Saharan Africa\n11.838675\t1961\tSpain\n6.9591\t2007\tIDA only\n9.8296175\t1965\tCosta Rica\n26.36194\t1972\tBotswana\n26.845322\t1996\tMozambique\n9.048841\t1972\tCaribbean small states\n9.144579\t2012\tSri Lanka\n12.1\t2015\tUkraine\n12.1\t1990\tUkraine\n12.1\t2000\tUkraine\n12.1\t1991\tUkraine\n12.1\t1990\tUkraine\n12.1\t1998\tUkraine\n12.1\t2016\tUkraine\n12.1\t1995\tUkraine\n12.1\t1992\tUkraine\n12.1\t1997\tUkraine\n12.1\t2004\tUkraine\n23.5977\t1982\tCongo, Rep.\n10.500693\t1976\tHonduras\n13.250086\t2005\tCambodia\n25.83149\t1972\tSt. Vincent and the Grenadines\n13.9\t2000\tTajikistan\n13.9\t2002\tTajikistan\n13.9\t1988\tTajikistan\n13.9\t1999\tTajikistan\n11.018513\t1989\tSuriname\n20.266293\t1976\tCyprus\n7.5433373\t1992\tEl Salvador\n16.66522\t1976\tSudan\n6.0001945\t2014\tDjibouti\n11.60034\t2004\tSub-Saharan Africa (excluding high income)\n11.645651\t1969\tEast Asia & Pacific\n22.003004\t1978\tCameroon\n10.410924\t1999\tLiechtenstein\n12.66971\t1991\tArgentina\n14.627248\t1976\tEgypt, Arab Rep.\n39.487095\t1974\tGabon\n15.916227\t1976\tMiddle East & North Africa (excluding high income)\n9.954231\t1981\tBenin\n12.896334\t1976\tArab World\n7.2016835\t2007\tPoland\n9.8546505\t1979\tMadagascar\n28.696266\t1987\tBhutan\n10.0\t1996\tRussian Federation\n10.0\t2012\tRussian Federation\n10.0\t2003\tRussian Federation\n10.0\t2005\tRussian Federation\n10.0\t2010\tRussian Federation\n10.0\t1999\tRussian Federation\n10.0\t2009\tRussian Federation\n10.0\t2000\tRussian Federation\n10.0\t2007\tRussian Federation\n10.0\t2002\tRussian Federation\n10.0\t1996\tRussian Federation\n10.0\t2004\tRussian Federation\n10.0\t2013\tRussian Federation\n10.0\t2002\tRussian Federation\n10.0\t2006\tRussian Federation\n10.0\t2008\tRussian Federation\n10.0\t2000\tRussian Federation\n10.0\t2006\tRussian Federation\n10.0\t2011\tRussian Federation\n10.0\t2010\tRussian Federation\n10.0\t1999\tRussian Federation\n10.0\t2000\tRussian Federation\n10.0\t2000\tRussian Federation\n10.0\t2001\tRussian Federation\n10.0\t2002\tRussian Federation\n10.0\t2014\tRussian Federation\n10.0\t2003\tRussian Federation\n10.0\t2001\tRussian Federation\n12.02392\t2003\tAndorra\n38.20071\t1991\tLebanon\n9.115646\t2006\tSao Tome and Principe\n10.952788\t1964\tBangladesh\n13.950682\t1973\tEcuador\n6.9535418\t1969\tEuro area\n149.97296\t1997\tEquatorial Guinea\n21.244144\t2004\tPre-demographic dividend\n24.309572\t1976\tJordan\n9.541044\t1963\tGuatemala\n8.692858\t2007\tIBRD only\n6.8927703\t1962\tHeavily indebted poor countries (HIPC)\n11.449743\t2004\tBelarus\n6.100627\t1973\tEuropean Union\n15.459713\t1965\tTogo\n15.50122\t1998\tTuvalu\n45.302753\t1974\tKiribati\n4.9377146\t2004\tHungary\n8.207246\t1961\tItaly\n6.5564966\t1964\tOECD members\n13.3764\t2006\tAntigua and Barbuda\n9.046513\t2004\tSerbia\n22.562428\t1979\tBrunei Darussalam\n10.657902\t2007\tMontenegro\n15.916227\t1976\tMiddle East & North Africa (IDA & IBRD countries)\n18.167528\t1981\tGuinea-Bissau\n13.5\t1999\tKazakhstan\n13.5\t1999\tKazakhstan\n13.5\t2012\tKazakhstan\n13.5\t2001\tKazakhstan\n13.5\t2014\tKazakhstan\n13.5\t2012\tKazakhstan\n13.5\t1999\tKazakhstan\n13.5\t1995\tKazakhstan\n33.990467\t1993\tKuwait\n22.173891\t1971\tKenya\n12.928475\t2011\tSolomon Islands\n17.613089\t1964\tCote d'Ivoire\n26.973917\t2001\tKosovo\n21.020649\t2009\tAfghanistan\n19.105537\t1986\tIsle of Man\n6.645997\t1964\tWorld\n18.001049\t1974\tFrench Polynesia\n14.441417\t2003\tTrinidad and Tobago\n11.588021\t2004\tSub-Saharan Africa (IDA & IBRD countries)\n18.008554\t1972\tJamaica\n13.288115\t1988\tThailand\n16.241243\t1990\tFragile and conflict affected situations\n16.647455\t1965\tZambia\n19.182642\t1994\tCabo Verde\n6.473487\t2007\tMacedonia, FYR\n25.947592\t1998\tWest Bank and Gaza\n7.1167793\t1962\tCanada\n10.583844\t2006\tOther small states\n26.754988\t2004\tMacao SAR, China\n6.821457\t1964\tSweden\n18.202286\t1993\tPapua New Guinea\n5.305203\t1994\tCayman Islands\n17.290777\t2011\tMongolia\n21.32567\t1970\tBurundi\n16.728817\t1995\tMalawi\n6.9905305\t1969\tFrance\n21.22141\t1994\tEritrea\n26.170246\t2006\tQatar\n5.6764426\t2006\tBarbados\n8.533192\t2007\tIDA & IBRD total\n11.229955\t2004\tIDA total\n9.921154\t2007\tUzbekistan\n11.523244\t1995\tUganda\n19.4\t2011\tChina\n19.4\t1970\tChina\n8.312726\t1964\tEarly-demographic dividend\n22.593054\t2007\tAngola\n6.466701\t1964\tPost-demographic dividend\n8.6221485\t1973\tLatin America & Caribbean\n14.046002\t2011\tGhana\n14.667397\t1972\tVirgin Islands (U.S.)\n26.139296\t1979\tBahamas, The\n104.486786\t2012\tLibya\n12.372876\t1996\tMorocco\n12.870007\t1993\tBahrain\n5.523738\t2011\tHaiti\n13.85933\t1987\tEthiopia\n8.458984\t2008\tRomania\n12.269548\t2004\tNamibia\n12.882468\t1968\tJapan\n11.212815\t1966\tTurkey\n13.351832\t1967\tFiji\n22.565151\t1970\tZimbabwe\n6.2733355\t1961\tNorway\n11.086954\t2007\tLithuania\n9.378625\t2007\tLeast developed countries: UN classification\n7.178966\t1996\tSamoa\n10.259963\t2010\tIndia\n13.472612\t1978\tNiger\n30.073698\t1975\tSomalia\n4.330794\t1989\tSwitzerland\n11.014744\t1996\tBurkina Faso\n10.9000435\t1995\tPalau\n16.164154\t1976\tHong Kong SAR, China\n8.46345\t1978\tColombia\n9.048979\t2007\tUpper middle income\n13.501173\t1999\tAlbania\n20.654325\t2006\tMaldives\n6.941572\t2007\tSlovenia\n21.018\t1990\tSwaziland\n18.226683\t1970\tDominican Republic\n33.735775\t2004\tNigeria\n22.672523\t1973\tSaudi Arabia\n11.714203\t1973\tMalaysia\n13.160728\t1970\tEast Asia & Pacific (IDA & IBRD countries)\n9.08357\t2010\tSouth Asia\n34.600002\t1988\tNew Caledonia\n9.269938\t1964\tDenmark\n9.593287\t1969\tFinland\n11.1779995\t1997\tIreland\n6.8765445\t2006\tCzech Republic\n10.848075\t2000\tComoros\n6.9566846\t1964\tBelgium\n12.612603\t1970\tPortugal\n13.843995\t2003\tMyanmar\n21.151693\t1978\tSeychelles\n7.7826047\t2006\tEurope & Central Asia (IDA & IBRD countries)\n10.834435\t2007\tSlovak Republic\n18.286606\t2004\tVenezuela, RB\n14.192425\t1974\tNicaragua\n6.008331\t1973\tEurope & Central Asia\n6.4625196\t1964\tHigh income\n12.034179\t1968\tIndonesia\n9.68113\t1984\tNepal\n9.983934\t1986\tLuxembourg\n7.259087\t1984\tUnited States\n13.060838\t1971\tIceland\n88.957664\t1996\tBosnia and Herzegovina\n35.38456\t1990\tTurkmenistan\n26.268576\t2002\tSierra Leone\n13.20003\t1988\tKyrgyz Republic\n11.798595\t1997\tEstonia\n15.166518\t1980\tBelize\n57.81783\t1990\tIraq\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1774279498489_977826759",
+      "id": "20200925-001035_102671005",
+      "dateCreated": "2026-03-23T15:24:58+0000",
+      "status": "READY",
+      "$$hashKey": "object:224"
+    },
+    {
+      "text": "\n\n%spark.pyspark\n# Load the actual data into a DataFrame\nwdi_df = spark.read.table(\"wdi_csv_parquet\")\n\n# Inspect the schema to see column types (year, indicator, value, etc.)\nwdi_df.printSchema()\n\n# Show the first 10 rows of data\nwdi_df.show(10)",
+      "user": "anonymous",
+      "dateUpdated": "2026-03-23T15:36:22+0000",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "python",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/python",
+        "fontSize": 9,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "root\n |-- year: integer (nullable = true)\n |-- countryname: string (nullable = true)\n |-- countrycode: string (nullable = true)\n |-- indicatorname: string (nullable = true)\n |-- indicatorcode: string (nullable = true)\n |-- indicatorvalue: float (nullable = true)\n\n+----+------------+------------+--------------------+-----------------+--------------+\n|year| countryname| countrycode|       indicatorname|    indicatorcode|indicatorvalue|\n+----+------------+------------+--------------------+-----------------+--------------+\n|null|country_name|country_code|      indicator_name|   indicator_code|          null|\n|1960|        Chad|         TCD|Adjusted net enro...|      SE.PRM.TENR|           0.0|\n|1960|        Chad|         TCD|Agriculture, valu...|NV.AGR.TOTL.KD.ZG|           0.0|\n|1960|        Chad|         TCD|All education sta...|   SE.XPD.MSEC.ZS|           0.0|\n|1960|        Chad|         TCD|Automated teller ...|   FB.ATM.TOTL.P5|           0.0|\n|1960|        Chad|         TCD|Average working h...|SL.TLF.0714.WK.TM|           0.0|\n|1960|        Chad|         TCD|Birth rate, crude...|   SP.DYN.CBRT.IN|        45.785|\n|1960|        Chad|         TCD|Children in emplo...|SL.SLF.0714.FE.ZS|           0.0|\n|1960|        Chad|         TCD|CO2 emissions fro...|EN.ATM.CO2E.LF.KT|        55.005|\n|1960|        Chad|         TCD|Commitments, IDA ...|   DT.COM.MIDA.CD|           0.0|\n+----+------------+------------+--------------------+-----------------+--------------+\nonly showing top 10 rows\n\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://jarvis-spark-cluster-v2-m.northamerica-northeast2-b.c.solid-future-484216-h9.internal:44709/jobs/job?id=2",
+              "$$hashKey": "object:1502"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1774279498494_1135886458",
+      "id": "20200925-001040_676373300",
+      "dateCreated": "2026-03-23T15:24:58+0000",
+      "dateStarted": "2026-03-23T15:36:22+0000",
+      "dateFinished": "2026-03-23T15:36:23+0000",
+      "status": "FINISHED",
+      "$$hashKey": "object:225"
+    },
+    {
+      "text": "%spark.pyspark\n",
+      "user": "anonymous",
+      "dateUpdated": "2026-03-23T15:29:32+0000",
+      "progress": 0,
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1774279772463_1782854353",
+      "id": "paragraph_1774279772463_1782854353",
+      "dateCreated": "2026-03-23T15:29:32+0000",
+      "status": "READY",
+      "$$hashKey": "object:226"
+    }
+  ],
+  "name": "Spark Dataframe - WDI Data Analytics",
+  "id": "2MP1GEJZT",
+  "defaultInterpreterGroup": "spark",
+  "version": "0.10.1",
+  "noteParams": {},
+  "noteForms": {},
+  "angularObjects": {},
+  "config": {
+    "isZeppelinNotebookCronEnable": false,
+    "looknfeel": "default",
+    "personalizedMode": "false"
+  },
+  "info": {},
+  "path": "/Spark Dataframe - WDI Data Analytics"
+}
