@@ -38,7 +38,7 @@ In this phase, I evaluated PySpark on **Apache Zeppelin** using the **World Deve
 - Exploring indicator trends (like GDP or education metrics) using Zeppelin's interactive visualizations.
 
 The notebook implementation can be found here:
-- [Spark Dataframe - WDI Data Analytics Notebook](./notebook/spark_dataframe_wdi_data_analytics.ipynb)
+- [Spark Dataframe - WDI Data Analytics Notebook](./notebook/spark_dataframe_wdi_data_analytics.json)
 
 ### Architecture
 This implementation utilizes a traditional Hadoop stack:
