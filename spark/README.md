@@ -25,10 +25,6 @@ The architecture leverages a cloud-native Hadoop environment:
 - **PySpark:** The engine used for data transformation.
 - **Data Flow:** Data is ingested from DBFS, processed in Spark memory (RAM), and analyzed using DataFrame APIs.
 
-### Architecture Diagram
-
-
----
 
 ## Zeppelin and Hadoop Implementation
 
