@@ -1,6 +1,10 @@
 # Esther Lara Nascimento . Jarvis Consulting
 
-Aspiring Data Engineer with a strong foundation in database management, cloud infrastructure, and software development. Experienced in provisioning cloud environments on GCP, designing relational database schemas using PostgreSQL, and automating system monitoring with Bash. Proficient in writing complex SQL queries for data analysis and managing version control with Git. Passionate about building scalable data solutions and automating development workflows.
+Aspiring Data Engineer with a strong foundation in database management, cloud infrastructure, and software development.
+Experienced in provisioning cloud environments on GCP, designing relational database schemas using PostgreSQL, and
+automating system monitoring with Bash. Proficient in writing SQL queries for data analysis and managing
+version control with Git. Passionate about building scalable data solutions and automating development workflows, 
+with a personal interest in capital markets and finance, complemented by a comprehensive understanding of key market concepts.
 
 
 ## Skills
