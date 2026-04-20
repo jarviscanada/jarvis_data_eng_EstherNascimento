@@ -4,7 +4,11 @@
 name: Esther Lara Nascimento
 github_repo_root_url: https://github.com/jarviscanada/jarvis_data_eng_EstherLaraNascimento
 summary: |
-  Aspiring Data Engineer with a strong foundation in database management, cloud infrastructure, and software development. Experienced in provisioning cloud environments on GCP, designing relational database schemas using PostgreSQL, and automating system monitoring with Bash. Proficient in writing complex SQL queries for data analysis and managing version control with Git. Passionate about building scalable data solutions and automating development workflows.
+  Aspiring Data Engineer with a strong foundation in database management, cloud infrastructure, and software development.
+  Experienced in provisioning cloud environments on GCP, designing relational database schemas using PostgreSQL, and
+  automating system monitoring with Bash. Proficient in writing SQL queries for data analysis and managing
+  version control with Git. Passionate about building scalable data solutions and automating development workflows, 
+  with a personal interest in capital markets and finance, complemented by a comprehensive understanding of key market concepts.
 
 # ---------------------------------------------------------
 # SKILLS
@@ -16,24 +20,28 @@ skills:
     - Docker
     - Git/GitHub
     - Database Design (DDL/DML)
-    - Crontab/Automation
+    
   competent:
     - Python
     - C++
     - JavaScript
     - Google Cloud Platform (GCP)
     - HTML/CSS
+    - Java
+    -  MongoDB
+    - Crontab/Automation
+
   familiar:
-    - MongoDB
     - React
     - Tableau
     - JSON/YAML
     - Jira
+    - Docker Compose
 
 # ---------------------------------------------------------
 # JARVIS PROJECTS
 # ---------------------------------------------------------
-# Updated: Only Cluster Monitor is listed here.
+# Updated Only Cluster Monitor is listed here.
 jarvis_projects:
   - name: Cluster Monitor
     git_url: https://github.com/jarviscanada/jarvis_data_eng_EstherLaraNascimento/tree/feature/cluster_monitor
@@ -43,14 +51,20 @@ jarvis_projects:
 # ---------------------------------------------------------
 # HIGHLIGHTED PROJECTS
 # ---------------------------------------------------------
-# Updated: Includes your RDBMS (SQL) and Remote Desktop work.
+# Updated: Includes your RDBMS 
 highlighted_projects:
   - name: Jarvis RDBMS (Relational Database)
     description: Designed and deployed a containerized PostgreSQL database for a country club management system using Docker. Architected the database schema (DDL) and managed data ingestion for members, facilities, and bookings. Engineered complex SQL queries using Joins, Aggregations, and Window Functions.
 
-  - name: Jarvis Remote Desktop (Infrastructure)
-    description: Provisioned and configured a Google Cloud Platform (GCP) Virtual Machine with Rocky Linux to serve as a dedicated remote development environment. Orchestrated the installation of Docker and VNC servers, and configured firewall rules for secure access.
 
+  - name: Java Grep App
+    description: Developed a Java application to search for text patterns within files recursively across directories. Leveraged Lambda expressions and the Streams API for efficient data processing, while implementing SLF4J for application logging. 
+
+  - name: Data Engineering PoC (London Gift Shop)
+    description: Engineered a Proof of Concept (PoC) for a retail data pipeline using Python and Pandas. Implemented data ingestion and transformation logic to process store transactions and inventory data, creating a scalable foundation for business intelligence and reporting.
+
+  - name: Jarvis Remote Desktop (Infrastructure)
+    description: Provisioned and configured a Google Cloud Platform (GCP) Virtual Machine with Rocky Linux to serve as a dedicated remote development environment. Orchestrated the installation of Docker and VNC servers, and configured firewall rules for secure access.      
 # ---------------------------------------------------------
 # PROFESSIONAL EXPERIENCE
 # ---------------------------------------------------------

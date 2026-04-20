@@ -1,0 +1,5 @@
+dependency-reduced-pom.xml
+log/
+# Also ignoring the python data path you mentioned
+../../python_data_analytics/psql/retail_data.csv
+../../python_data_analytics/psql/retail_data.csv

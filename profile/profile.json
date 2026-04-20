@@ -18,6 +18,14 @@
       "name": "Jarvis RDBMS (Relational Database)"
     },
     {
+      "description": "Developed a Java application to search for text patterns within files recursively across directories. Leveraged Lambda expressions and the Streams API for efficient data processing, while implementing SLF4J for application logging.",
+      "name": "Java Grep App"
+    },
+    {
+      "description": "Engineered a Proof of Concept (PoC) for a retail data pipeline using Python and Pandas. Implemented data ingestion and transformation logic to process store transactions and inventory data, creating a scalable foundation for business intelligence and reporting.",
+      "name": "Data Engineering PoC (London Gift Shop)"
+    },
+    {
       "description": "Provisioned and configured a Google Cloud Platform (GCP) Virtual Machine with Rocky Linux to serve as a dedicated remote development environment. Orchestrated the installation of Docker and VNC servers, and configured firewall rules for secure access.",
       "name": "Jarvis Remote Desktop (Infrastructure)"
     }
@@ -56,23 +64,25 @@
       "C++",
       "JavaScript",
       "Google Cloud Platform (GCP)",
-      "HTML/CSS"
+      "HTML/CSS",
+      "Java",
+      "MongoDB",
+      "Crontab/Automation"
     ],
     "familiar": [
-      "MongoDB",
       "React",
       "Tableau",
       "JSON/YAML",
-      "Jira"
+      "Jira",
+      "Docker Compose"
     ],
     "proficient": [
       "SQL (PostgreSQL)",
       "Linux/Bash Scripting",
       "Docker",
       "Git/GitHub",
-      "Database Design (DDL/DML)",
-      "Crontab/Automation"
+      "Database Design (DDL/DML)"
     ]
   },
-  "summary": "Aspiring Data Engineer with a strong foundation in database management, cloud infrastructure, and software development. Experienced in provisioning cloud environments on GCP, designing relational database schemas using PostgreSQL, and automating system monitoring with Bash. Proficient in writing complex SQL queries for data analysis and managing version control with Git. Passionate about building scalable data solutions and automating development workflows.\n"
+  "summary": "Aspiring Data Engineer with a strong foundation in database management, cloud infrastructure, and software development.\nExperienced in provisioning cloud environments on GCP, designing relational database schemas using PostgreSQL, and\nautomating system monitoring with Bash. Proficient in writing SQL queries for data analysis and managing\nversion control with Git. Passionate about building scalable data solutions and automating development workflows, \nwith a personal interest in capital markets and finance, complemented by a comprehensive understanding of key market concepts.\n"
 }
