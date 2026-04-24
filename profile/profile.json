@@ -9,6 +9,16 @@
       "department": "School of Information Technology",
       "duration": "2023 - 2025",
       "school_name": "Seneca College"
+    },
+    {
+      "awards_achievements": [
+        "Gained a comprehensive understanding of business operations and management.",
+        "Enhanced communication and leadership skills within a diverse business environment."
+      ],
+      "degree": "Diploma in International Business Management Co-Op",
+      "department": "Business Department",
+      "duration": "2020 - 2022",
+      "school_name": "Greystone College"
     }
   ],
   "github_repo_root_url": "https://github.com/jarviscanada/jarvis_data_eng_EstherLaraNascimento",
@@ -55,7 +65,7 @@
       "company": "Construtora Vale do Ouro",
       "description": "Ensured high-accuracy data entry and prepared detailed financial reports for senior management and directors. Managed tax filings and operational compliance requirements while collaborating within a team environment to optimize financial workflows.",
       "duration": "2017 - 2019",
-      "title": "Accountant"
+      "title": "Assistant  Accountant"
     }
   ],
   "skills": {
@@ -84,5 +94,5 @@
       "Database Design (DDL/DML)"
     ]
   },
-  "summary": "Aspiring Data Engineer with a strong foundation in database management, cloud infrastructure, and software development.\nExperienced in provisioning cloud environments on GCP, designing relational database schemas using PostgreSQL, and\nautomating system monitoring with Bash. Proficient in writing SQL queries for data analysis and managing\nversion control with Git. Passionate about building scalable data solutions and automating development workflows, \nwith a personal interest in capital markets and finance, complemented by a comprehensive understanding of key market concepts.\n"
+  "summary": "I recently graduated with a Diploma in Computer Programming from Seneca College and have been \nbuilding hands-on experience through technical projects at Jarvis Consulting Group. My background \nincludes working with Python, Java, SQL, and cloud infrastructure to build scalable applications \nand automated system solutions. What excites me most about the technology industry is the \nopportunity to solve real business problems with code and to keep learning new tools and systems. \nI am especially passionate about software development and system architecture because it combines \ncreative problem-solving, scalability, and practical business impact, all supported by my \nfoundational background in International Business Management.\n"
 }

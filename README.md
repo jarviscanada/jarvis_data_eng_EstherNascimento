@@ -1,10 +1,13 @@
 # Esther Lara Nascimento . Jarvis Consulting
 
-Aspiring Data Engineer with a strong foundation in database management, cloud infrastructure, and software development.
-Experienced in provisioning cloud environments on GCP, designing relational database schemas using PostgreSQL, and
-automating system monitoring with Bash. Proficient in writing SQL queries for data analysis and managing
-version control with Git. Passionate about building scalable data solutions and automating development workflows, 
-with a personal interest in capital markets and finance, complemented by a comprehensive understanding of key market concepts.
+I recently graduated with a Diploma in Computer Programming from Seneca College and have been 
+building hands-on experience through technical projects at Jarvis Consulting Group. My background 
+includes working with Python, Java, SQL, and cloud infrastructure to build scalable applications 
+and automated system solutions. What excites me most about the technology industry is the 
+opportunity to solve real business problems with code and to keep learning new tools and systems. 
+I am especially passionate about software development and system architecture because it combines 
+creative problem-solving, scalability, and practical business impact, all supported by my 
+foundational background in International Business Management.
 
 
 ## Skills
@@ -36,13 +39,17 @@ Project source code: [https://github.com/jarviscanada/jarvis_data_eng_EstherLara
 
 ## Professional Experiences
 
-**Accountant, Construtora Vale do Ouro (2017 - 2019)**: Ensured high-accuracy data entry and prepared detailed financial reports for senior management and directors. Managed tax filings and operational compliance requirements while collaborating within a team environment to optimize financial workflows.
+**Assistant  Accountant, Construtora Vale do Ouro (2017 - 2019)**: Ensured high-accuracy data entry and prepared detailed financial reports for senior management and directors. Managed tax filings and operational compliance requirements while collaborating within a team environment to optimize financial workflows.
 
 
 ## Education
 **Seneca College (2023 - 2025)**, Diploma in Computer Programming, School of Information Technology
 - Relevant Coursework: Object-Oriented Programming (C++, Java), Database Design (SQL).
 - Applied SDLC principles to design and deploy scalable applications.
+
+**Greystone College (2020 - 2022)**, Diploma in International Business Management Co-Op, Business Department
+- Gained a comprehensive understanding of business operations and management.
+- Enhanced communication and leadership skills within a diverse business environment.
 
 
 ## Miscellaneous
