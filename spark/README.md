@@ -25,10 +25,6 @@ The architecture leverages a cloud-native Hadoop environment:
 - **PySpark:** The engine used for data transformation.
 - **Data Flow:** Data is ingested from DBFS, processed in Spark memory (RAM), and analyzed using DataFrame APIs.
 
-### Architecture Diagram
-
-
----
 
 ## Zeppelin and Hadoop Implementation
 
@@ -47,10 +43,7 @@ This implementation utilizes a traditional Hadoop stack:
 - **Hive Metastore:** Used to manage the metadata for the WDI tables stored in HDFS.
 - **PySpark:** Used to perform DataFrame-based queries on top of Hive tables.
 
-### Architecture Diagram
 
-
----
 
 ## Future Improvements
 1. **Pipeline Automation:** Implement an automated ETL trigger using Azure Data Factory or Google Cloud Composer to ingest new data daily.
