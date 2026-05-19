@@ -3,7 +3,9 @@
     {
       "awards_achievements": [
         "Relevant Coursework: Object-Oriented Programming (C++, Java), Database Design (SQL).",
-        "Applied SDLC principles to design and deploy scalable applications."
+        "Applied SDLC principles to design and deploy scalable applications.",
+        "Practiced Business Systems Analysis skills by gathering document requirements from stakeholders and mapping out business workflows.",
+        "Collaborated closely with both technical and business teams to translate project needs into clear documentation."
       ],
       "degree": "Diploma in Computer Programming",
       "department": "School of Information Technology",
@@ -38,6 +40,10 @@
     {
       "description": "Provisioned and configured a Google Cloud Platform (GCP) Virtual Machine with Rocky Linux to serve as a dedicated remote development environment. Orchestrated the installation of Docker and VNC servers, and configured firewall rules for secure access.",
       "name": "Jarvis Remote Desktop (Infrastructure)"
+    },
+    {
+      "description": "Developed a cloud-based data pipeline using the Medallion Architecture to ingest, transform, and analyze financial transaction data. Built data validation layers to ensure information reliability and created aggregate analytics dashboards for fraud pattern tracking.",
+      "name": "Databricks Financial ETL Pipeline"
     }
   ],
   "jarvis_projects": [
