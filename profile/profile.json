@@ -42,7 +42,7 @@
       "name": "Databricks Financial ETL Pipeline"
     },
     {
-      "description": "Developed three interactive Power BI dashboards to deliver actionable insights across sales, survey, and financial data. Built a Beverages Sales Dashboard analyzing Coca-Cola's sales and operating profit across U.S. states using AI-driven Q and A, key influencer visuals, and dynamic maps. Transformed and analyzed over 600 survey responses to create a Data Professionals Report highlighting trends in salary, job satisfaction, and in-demand skills. Designed a Stocks Dashboard by integrating Alpha Vantage API data to visualize historical prices, trading volume, key financial metrics, and earnings estimates. Performed data cleaning, transformation, and modeling, validated outputs, and translated complex data into clear, data-driven business insights.\n",
+      "description": "Developed three interactive Power BI dashboards to deliver actionable insights across sales, survey, and financial data. Built a Beverages Sales Dashboard analyzing Coca-Cola's sales and operating profit across U.S. states using AI-driven Q and A, key influencer visuals, and dynamic maps. Transformed and analyzed over 600 survey responses to create a Data Professionals Report highlighting trends in salary, job satisfaction, and in-demand skills. Designed a Stocks Dashboard by integrating Alpha Vantage API data to visualize historical prices, trading volume, key financial metrics, and earnings estimates. Performed data cleaning, transformation, and modeling, validated outputs, and translated data into clear, data-driven business insights.\n",
       "name": "Power BI Fundamentals"
     },
     {
@@ -50,7 +50,7 @@
       "name": "PySpark"
     },
     {
-      "description": "Structured and executed a comprehensive BSA project centered on deconstructing complex product requests into clear, actionable business objectives. By performing detailed requirements analysis, business needs were successfully separated from technical constraints, allowing high-level goals to be translated into specific functional and non-functional specifications. The project involved simulating stakeholder engagement through a dedicated requirements elicitation process and interactive presentations to document critical assumptions and clarifications, ensuring the completeness of the system's scope. This process culminated in the production of professional BRD and SRD-style documentation, demonstrating a strong ability to communicate business logic, data requirements, and intended system behavior to both technical and non-technical audiences.\n",
+      "description": "Executed a comprehensive business analysis project focused on breaking down complex product requirements into structured technical and operational goals. Conducted detailed requirements elicitation and ran interactive project presentations to map out functional expectations, clear up scoping gaps, and document key logic constraints. This structured approach directly resulted in the production of professional Business Requirements Documentation (BRD) and System Requirements Documentation (SRD), establishing an accurate blueprint that aligned development cycles with core business logic.\n",
       "name": "BSA Fundamentals"
     }
   ],
@@ -66,7 +66,6 @@
     {
       "bullets": [
         "Fluent in Portuguese and English",
-        "Plant Care Enthusiast (Monstera, ZZ Plants)",
         "Continuous Learner",
         "Team Player",
         "Problem Solver"
@@ -77,13 +76,13 @@
   "professional_experience": [
     {
       "company": "Jarvis Consulting",
-      "description": "Collaborate with stakeholders and developers to translate high-level business needs into detailed functional and non-functional requirements for analytics and infrastructure projects. Lead the end-to-end design of Power BI dashboards, managing everything from SQL data modeling to UI development to provide e-commerce clients with actionable sales and operational insights. Support the full project lifecycle by performing data validation, mapping system workflows, and maintaining comprehensive documentation, including BRDs and process diagrams. By bridging the gap between business goals and technical execution across Linux and Python-based environments, ensure all solutions deliver accurate, reliable, and data-driven results.\n",
+      "description": "Collaborate with colleagues to create projects that break down high-level business goals into functional and non-functional specifications for core infrastructure and engineering initiatives. Work alongside developers to build custom Power BI dashboards, managing the layout configuration and underlying SQL data validation to deliver clear insights for retail and business data. Map functional system workflows and maintain structured document control to support development cycles. Ensure that implemented tools match original project objectives by performing data integrity checks across technical environments.\n",
       "duration": "2026 - present",
       "title": "Business Systems Analyst"
     },
     {
       "company": "Construtora Vale do Ouro",
-      "description": "Collaborated directly with the CEO and senior engineering teams to gather requirements across departments and turn complex financial data into clear insights that helped everyone make better business decisions. I was the go-to person for multiple stakeholders, proactively presenting reports and keeping the lines of communication open across the company. I also teamed up with the rest of the finance department to double-check our validation processes, making sure our data was always reliable and accurate. Beyond reporting, I handled tax filings and looked for ways to make our daily workflows smoother for the whole team..\n",
+      "description": "Collaborated directly with the CEO and senior engineering teams to gather requirements across departments and turn complex financial data into clear insights that helped everyone make better business decisions[cite: 6]. I was the go-to person for multiple stakeholders, proactively presenting reports and keeping the lines of communication open across the company[cite: 6]. I also teamed up with the rest of the finance department to double-check our validation processes, making sure our data was always reliable and accurate[cite: 6]. Beyond reporting, I handled tax filings and looked for ways to make our daily workflows smoother for the whole team.[cite: 6]\n",
       "duration": "2017 - 2019",
       "title": "Assistant Accountant"
     }
@@ -116,5 +115,5 @@
       "Process Documentation"
     ]
   },
-  "summary": "I recently graduated with a Diploma in Computer Programming from Seneca College and have been \nbuilding hands-on experience through technical projects at Jarvis Consulting Group. My background \nincludes working with Python, Java, SQL, and cloud infrastructure to build scalable applications \nand automated system solutions. What excites me most about the technology industry is the \nopportunity to solve real business problems with code and to keep learning new tools and systems. \nI am especially passionate about software development and system architecture because it combines \ncreative problem-solving, scalability, and practical business impact, all supported by my \nfoundational background in International Business Management.\n"
+  "summary": "I recently graduated with a Diploma in Computer Programming from Seneca College and have been \nbuilding hands-on experience through technical projects at Jarvis Consulting Group. My background \nincludes working with Java, SQL, and cloud infrastructure to build scalable applications \nand automated system solutions. What excites me most about the technology industry is the \nopportunity to solve real business problems with code and to keep learning new tools and systems. \nI am especially passionate about software development and system architecture because it combines \ncreative problem-solving, scalability, and practical business impact, all supported by my \nfoundational background in International Business Management.\n"
 }
