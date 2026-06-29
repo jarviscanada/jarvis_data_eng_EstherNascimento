@@ -36,16 +36,20 @@ Project source code: [https://github.com/jarviscanada/jarvis_data_eng_EstherLara
 
 **Jarvis Remote Desktop (Infrastructure)**: Provisioned and configured a Google Cloud Platform (GCP) Virtual Machine with Rocky Linux to serve as a dedicated remote development environment. Orchestrated the installation of Docker and VNC servers, and configured firewall rules for secure access.
 
+**Databricks Financial ETL Pipeline**: Developed a cloud-based data pipeline using the Medallion Architecture to ingest, transform, and analyze financial transaction data. Built data validation layers to ensure information reliability and created aggregate analytics dashboards for fraud pattern tracking.
+
 
 ## Professional Experiences
 
-**Assistant  Accountant, Construtora Vale do Ouro (2017 - 2019)**: Ensured high-accuracy data entry and prepared detailed financial reports for senior management and directors. Managed tax filings and operational compliance requirements while collaborating within a team environment to optimize financial workflows.
+**Assistant  Accountant, Construtora Vale do Ouro (2017 - 2019)**: Collaborated directly with the CEO and senior engineering teams to gather requirements across departments and and  turn complex financial data into clear insights that helped everyone make better business decisions. I was the go-to person for multiple stakeholders, proactively presenting reports and keeping the lines of communication open across the company. I also teamed up with the rest of the finance department to double-check our validation processes, making sure our data was always reliable and accurate. Beyond reporting, I handled tax filings and looked for ways to make our daily workflows smoother for the whole team..
 
 
 ## Education
 **Seneca College (2023 - 2025)**, Diploma in Computer Programming, School of Information Technology
 - Relevant Coursework: Object-Oriented Programming (C++, Java), Database Design (SQL).
 - Applied SDLC principles to design and deploy scalable applications.
+- Gathered and analyzed document requirements for software projects to define clear project scopes.
+- Collaborated with team members to document user needs and map out system workflows for course assignments. translate project needs into clear documentation.
 
 **Greystone College (2020 - 2022)**, Diploma in International Business Management Co-Op, Business Department
 - Gained a comprehensive understanding of business operations and management.
