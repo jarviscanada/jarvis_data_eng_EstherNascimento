@@ -2,7 +2,7 @@
 
 I recently graduated with a Diploma in Computer Programming from Seneca College and have been 
 building hands-on experience through technical projects at Jarvis Consulting Group. My background 
-includes working with Python, Java, SQL, and cloud infrastructure to build scalable applications 
+includes working with Java, SQL, and cloud infrastructure to build scalable applications 
 and automated system solutions. What excites me most about the technology industry is the 
 opportunity to solve real business problems with code and to keep learning new tools and systems. 
 I am especially passionate about software development and system architecture because it combines 
@@ -12,11 +12,11 @@ foundational background in International Business Management.
 
 ## Skills
 
-**Proficient:** SQL (PostgreSQL), Linux/Bash Scripting, Docker, Git/GitHub, Database Design (DDL/DML)
+**Proficient:** SQL (PostgreSQL), Linux/Bash Scripting, Docker, Git/GitHub, Database Design (DDL/DML), Requirements Elicitation, Process Documentation
 
-**Competent:** Python, C++, JavaScript, Google Cloud Platform (GCP), HTML/CSS, Java, MongoDB, Crontab/Automation
+**Competent:** Python, C++, JavaScript, HTML/CSS, Crontab/Automation, Tableau, React, Jira
 
-**Familiar:** React, Tableau, JSON/YAML, Jira, Docker Compose
+**Familiar:** JSON/YAML, Docker Compose, Google Cloud Platform (GCP), Java, MongoDB
 
 ## Jarvis Projects
 
@@ -30,22 +30,41 @@ Project source code: [https://github.com/jarviscanada/jarvis_data_eng_EstherLara
 ## Highlighted Projects
 **Jarvis RDBMS (Relational Database)**: Designed and deployed a containerized PostgreSQL database for a country club management system using Docker. Architected the database schema (DDL) and managed data ingestion for members, facilities, and bookings. Engineered complex SQL queries using Joins, Aggregations, and Window Functions.
 
-**Java Grep App**: Developed a Java application to search for text patterns within files recursively across directories. Leveraged Lambda expressions and the Streams API for efficient data processing, while implementing SLF4J for application logging.
+
+**Java Grep App**: Developed a Java application to search for text patterns within files recursively across directories. Leveraged Lambda expressions and the Streams API for efficient data processing, while implementing SLF4J for application logging. 
+
 
 **Data Engineering PoC (London Gift Shop)**: Engineered a Proof of Concept (PoC) for a retail data pipeline using Python and Pandas. Implemented data ingestion and transformation logic to process store transactions and inventory data, creating a scalable foundation for business intelligence and reporting.
 
-**Jarvis Remote Desktop (Infrastructure)**: Provisioned and configured a Google Cloud Platform (GCP) Virtual Machine with Rocky Linux to serve as a dedicated remote development environment. Orchestrated the installation of Docker and VNC servers, and configured firewall rules for secure access.
+
+**Databricks Financial ETL Pipeline**: Developed a cloud-based data pipeline using the Medallion Architecture to ingest, transform, and analyze financial transaction data. Built data validation layers to ensure information reliability and created aggregate analytics dashboards for fraud pattern tracking.
+
+
+**Power BI Fundamentals**: Developed three interactive Power BI dashboards to deliver actionable insights across sales, survey, and financial data. Built a Beverages Sales Dashboard analyzing Coca-Cola's sales and operating profit across U.S. states using AI-driven Q and A, key influencer visuals, and dynamic maps. Transformed and analyzed over 600 survey responses to create a Data Professionals Report highlighting trends in salary, job satisfaction, and in-demand skills. Designed a Stocks Dashboard by integrating Alpha Vantage API data to visualize historical prices, trading volume, key financial metrics, and earnings estimates. Performed data cleaning, transformation, and modeling, validated outputs, and translated data into clear, data-driven business insights.
+
+
+**PySpark**: Designed and deployed four comprehensive ETL pipelines within the Databricks platform using PySpark to ingest and process data from diverse sources, including REST APIs, PostgreSQL databases (via JDBC), and internal Hive tables. Developed data manipulation logic such as three-way joins and time-series aggregations to derive business-critical metrics, while optimizing storage and query performance through the use of Parquet and Delta Lake formats. Engineered data partitioning strategies to enable efficient partition pruning, significantly reducing I/O overhead and execution time for downstream analytics. Managed real-world data engineering challenges, including handling API rate limits and ensuring schema consistency across heterogeneous data environments to deliver production-ready data assets.
+
+
+**BSA Fundamentals**: Executed a comprehensive business analysis project focused on breaking down complex product requirements into structured technical and operational goals. Conducted detailed requirements elicitation and ran interactive project presentations to map out functional expectations, clear up scoping gaps, and document key logic constraints. This structured approach directly resulted in the production of professional Business Requirements Documentation (BRD) and System Requirements Documentation (SRD), establishing an accurate blueprint that aligned development cycles with core business logic.
+
 
 
 ## Professional Experiences
 
-**Assistant  Accountant, Construtora Vale do Ouro (2017 - 2019)**: Ensured high-accuracy data entry and prepared detailed financial reports for senior management and directors. Managed tax filings and operational compliance requirements while collaborating within a team environment to optimize financial workflows.
+**Business Systems Analyst, Jarvis Consulting (2026 - present)**: Collaborate with colleagues to create projects that break down high-level business goals into functional and non-functional specifications for core infrastructure and engineering initiatives. Work alongside developers to build custom Power BI dashboards, managing the layout configuration and underlying SQL data validation to deliver clear insights for retail and business data. Map functional system workflows and maintain structured document control to support development cycles. Ensure that implemented tools match original project objectives by performing data integrity checks across technical environments.
+
+
+**Assistant Accountant, Construtora Vale do Ouro (2017 - 2019)**: Collaborated directly with the CEO and senior engineering teams to gather requirements across departments and turn complex financial data into clear insights that helped everyone make better business decisions. I was the go-to person for multiple stakeholders, proactively presenting reports and keeping the lines of communication open across the company. I also teamed up with the rest of the finance department to double-check our validation processes, making sure our data was always reliable and accurate. Beyond reporting, I handled tax filings and looked for ways to make our daily workflows smoother for the whole team.
+
 
 
 ## Education
 **Seneca College (2023 - 2025)**, Diploma in Computer Programming, School of Information Technology
 - Relevant Coursework: Object-Oriented Programming (C++, Java), Database Design (SQL).
 - Applied SDLC principles to design and deploy scalable applications.
+- Gathered and analyzed document requirements for software projects to define clear project scopes.
+- Collaborated with team members to document user needs and map out system workflows for course assignments. translate project needs into clear documentation.
 
 **Greystone College (2020 - 2022)**, Diploma in International Business Management Co-Op, Business Department
 - Gained a comprehensive understanding of business operations and management.
@@ -54,7 +73,6 @@ Project source code: [https://github.com/jarviscanada/jarvis_data_eng_EstherLara
 
 ## Miscellaneous
 - Fluent in Portuguese and English
-- Plant Care Enthusiast (Monstera, ZZ Plants)
 - Continuous Learner
 - Team Player
 - Problem Solver
