@@ -12,7 +12,7 @@ foundational background in International Business Management.
 
 ## Skills
 
-**Proficient:** SQL (PostgreSQL), Linux/Bash Scripting, Docker, Git/GitHub, Database Design (DDL/DML), Requirements Elicitation, Process Documentation
+**Proficient:** SQL (PostgreSQL), Linux/Bash Scripting, Docker, Git/GitHub, Database Design (DDL/DML), Requirements Elicitation, Process Documentation, Power BI, Microsoft Excel
 
 **Competent:** Python, C++, JavaScript, HTML/CSS, Crontab/Automation, Tableau, React, Jira
 
