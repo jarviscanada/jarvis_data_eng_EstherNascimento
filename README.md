@@ -1,15 +1,20 @@
 # Esther Lara Nascimento . Jarvis Consulting
 
-Computer Programming graduate from Seneca College with hands-on experience as a Business Systems Analyst and Data Engineering Associate at Jarvis Consulting Group. Skilled in software development, SQL, Python, JavaScript, C++, APIs, databases, and cloud technologies. I am especially passionate about software development and system architecture because it combines 
+I recently graduated with a Diploma in Computer Programming from Seneca College and have been 
+building hands-on experience through technical projects at Jarvis Consulting Group. My background 
+includes working with Java, SQL, and cloud infrastructure to build scalable applications 
+and automated system solutions. What excites me most about the technology industry is the 
+opportunity to solve real business problems with code and to keep learning new tools and systems. 
+I am especially passionate about software development and system architecture because it combines 
 creative problem-solving, scalability, and practical business impact, all supported by my 
 foundational background in International Business Management.
 
 
 ## Skills
 
-**Proficient:** SQL (PostgreSQL), Excel, Linux/Bash Scripting, Docker, Git/GitHub, Database Design (DDL/DML), Requirements Elicitation, Process Documentation
+**Proficient:** SQL (PostgreSQL), Linux/Bash Scripting, Docker, Excel, C ++, Git/GitHub, Database Design (DDL/DML), Requirements Elicitation, Process Documentation
 
-**Competent:** Python, C++, JavaScript, HTML/CSS, Crontab/Automation, Tableau, React, Jira
+**Competent:** Python, Java, JavaScript, HTML/CSS, Crontab/Automation, Tableau, React, Jira
 
 **Familiar:** JSON/YAML, Docker Compose, Google Cloud Platform (GCP), Java, MongoDB
 
@@ -48,6 +53,7 @@ Project source code: [https://github.com/jarviscanada/jarvis_data_eng_EstherLara
 
 
 **Business Systems Analysis (BSA) AI Agents**: Designed and developed specialized workflow automation agents to streamline software development and documentation processes. Built a User Story Generator agent that processes Business Requirements Documents (BRDs) to automatically output structured Agile user stories and acceptance criteria. Developed a PowerPoint Review Assistant agent to audit presentation slide decks for structural consistency, visual design layout, and technical content accuracy.
+
 
 
 ## Professional Experiences
