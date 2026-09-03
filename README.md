@@ -12,7 +12,7 @@ foundational background in International Business Management.
 
 ## Skills
 
-**Proficient:** SQL (PostgreSQL), Linux/Bash Scripting, Docker, Git/GitHub, Database Design (DDL/DML), Requirements Elicitation, Process Documentation
+**Proficient:** SQL (PostgreSQL), Excel, Linux/Bash Scripting, Docker, Git/GitHub, Database Design (DDL/DML), Requirements Elicitation, Process Documentation
 
 **Competent:** Python, C++, JavaScript, HTML/CSS, Crontab/Automation, Tableau, React, Jira
 
@@ -48,6 +48,11 @@ Project source code: [https://github.com/jarviscanada/jarvis_data_eng_EstherLara
 
 **BSA Fundamentals**: Executed a comprehensive business analysis project focused on breaking down complex product requirements into structured technical and operational goals. Conducted detailed requirements elicitation and ran interactive project presentations to map out functional expectations, clear up scoping gaps, and document key logic constraints. This structured approach directly resulted in the production of professional Business Requirements Documentation (BRD) and System Requirements Documentation (SRD), establishing an accurate blueprint that aligned development cycles with core business logic.
 
+
+**Tableau Dashboard**: Designed a persona-driven credit risk dashboard in Tableau analyzing 38,000+ loan records to track portfolio performance and identify $65.5M in charged-off risk deficit. Standardized temporal data, eliminated category gaps, and optimized local memory performance to deliver instant, multi-tiered analytics for executive and operational leadership.
+
+
+**Business Systems Analysis (BSA) AI Agents**: Designed and developed specialized workflow automation agents to streamline software development and documentation processes. Built a User Story Generator agent that processes Business Requirements Documents (BRDs) to automatically output structured Agile user stories and acceptance criteria. Developed a PowerPoint Review Assistant agent to audit presentation slide decks for structural consistency, visual design layout, and technical content accuracy.
 
 
 ## Professional Experiences
