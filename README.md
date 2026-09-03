@@ -1,11 +1,6 @@
 # Esther Lara Nascimento . Jarvis Consulting
 
-I recently graduated with a Diploma in Computer Programming from Seneca College and have been 
-building hands-on experience through technical projects at Jarvis Consulting Group. My background 
-includes working with Java, SQL, and cloud infrastructure to build scalable applications 
-and automated system solutions. What excites me most about the technology industry is the 
-opportunity to solve real business problems with code and to keep learning new tools and systems. 
-I am especially passionate about software development and system architecture because it combines 
+Computer Programming graduate from Seneca College with hands-on experience as a Business Systems Analyst and Data Engineering Associate at Jarvis Consulting Group. Skilled in software development, SQL, Python, JavaScript, C++, APIs, databases, and cloud technologies. I am especially passionate about software development and system architecture because it combines 
 creative problem-solving, scalability, and practical business impact, all supported by my 
 foundational background in International Business Management.
 
